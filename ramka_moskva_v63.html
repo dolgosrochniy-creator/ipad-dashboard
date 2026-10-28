@@ -49,7 +49,7 @@ day.addEventListener('load',function(){try{var b=day.contentDocument.querySelect
 </script><script>
 (function(){
 'use strict';
-var frame=document.getElementById('frameShow'),a=document.getElementById('frameA'),b=document.getElementById('frameB'),empty=document.getElementById('frameEmpty'),file=document.getElementById('frameFile'),panel=document.getElementById('framePanel'),modeButton=document.getElementById('testModeButton');
+var frame=document.getElementById('frameShow'),a=document.getElementById('frameA'),b=document.getElementById('frameB'),empty=document.getElementById('frameEmpty'),file=document.getElementById('frameFile'),panel=document.getElementById('framePanel'),modeButton=document.getElementById('testModeButton'),returnButton=document.getElementById('returnToPhotos');
 var db=null,photos=[],index=-1,front=a,back=b,currentURL=null,previousURL=null,lastSlide=0,panelUntil=0,forcePanel=false,active=false,loading=false;
 function openDB(){if(!window.indexedDB){empty.querySelector('div:nth-child(2)').textContent='Хранение фотографий недоступно в этом режиме Safari';return}var req=indexedDB.open('ramka_personal_photos',1);req.onupgradeneeded=function(){if(!req.result.objectStoreNames.contains('images'))req.result.createObjectStore('images',{keyPath:'id',autoIncrement:true})};req.onsuccess=function(){db=req.result;reload()};req.onerror=function(){empty.querySelector('div:nth-child(2)').textContent='Не удалось открыть хранилище фотографий'}}
 function reload(){if(!db)return;var tx=db.transaction('images','readonly'),req=tx.objectStore('images').getAll();req.onsuccess=function(){photos=req.result||[];if(index>=photos.length)index=-1;if(active){if(photos.length&&!currentURL)next();showEmpty()}}}
@@ -60,11 +60,11 @@ file.onchange=function(){addFiles(file.files);file.value=''};
 document.getElementById('frameFirstAdd').onclick=document.getElementById('frameAdd').onclick=function(){file.click()};
 document.getElementById('frameNext').onclick=function(){next()};
 panel.onclick=function(){forcePanel=true;panelUntil=Date.now()+300000;frame.classList.remove('active');modeButton.classList.remove('frameHidden');document.getElementById('returnToPhotos').classList.add('visible')};document.getElementById('returnToPhotos').onclick=function(){forcePanel=false;panelUntil=0;document.getElementById('returnToPhotos').classList.remove('visible');tick()};
-function tick(){var hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date()));var menu=document.getElementById('menu'),manualButton=menu.querySelector('[data-mode].selected');var modeText='';try{modeText=document.getElementById('day').contentWindow.ramkaOverride||''}catch(e){}var night=document.getElementById('night');var eligible=(hour>=11&&hour<23)&&!night.classList.contains('active')&&modeText!=='morning';
+function tick(){var hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date()));var menu=document.getElementById('menu'),manualButton=menu.querySelector('[data-mode].selected');var modeText='';try{modeText=document.getElementById('day').contentWindow.ramkaOverride||''}catch(e){}var night=document.getElementById('night');var eligible=(hour>=8&&hour<23)&&!night.classList.contains('active');
 if(forcePanel&&Date.now()>=panelUntil)forcePanel=false;document.getElementById('returnToPhotos').classList.toggle('visible',forcePanel&&eligible);
 var shouldShow=eligible&&!forcePanel;
 if(shouldShow!==active){active=shouldShow;frame.classList.toggle('active',active);modeButton.classList.toggle('frameHidden',active);if(active){showEmpty();if(photos.length&&!currentURL)next()}}
-if(active&&photos.length&&Date.now()-lastSlide>=180000)next();
+returnButton.classList.toggle('visible',eligible&&!active&&forcePanel);if(active&&photos.length&&Date.now()-lastSlide>=180000)next();
 if(active){document.getElementById('frameClock').textContent=new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Moscow',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date());document.getElementById('frameDate').textContent=new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Moscow',weekday:'long',day:'numeric',month:'long'}).format(new Date())}
 }
 document.querySelectorAll('#menu [data-mode]').forEach(function(btn){btn.addEventListener('click',function(){forcePanel=false;document.getElementById('returnToPhotos').classList.remove('visible')})});
