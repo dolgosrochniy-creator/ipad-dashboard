@@ -185,7 +185,7 @@ document.body.classList.remove('dashboardButtonsVisible');
     var rows=(req.result||[]).filter(function(x){return x.blob&&x.blob.size>0});
     if(!rows.length){busy=false;alert('Нет фотографий для экспорта');return}
     var manifest=rows.map(function(x){return {name:x.name||'photo.jpg',type:x.blob.type||'image/jpeg',size:x.blob.size,added:x.added||0}});
-    var head=JSON.stringify(manifest).replace(/[\\u007f-\\uffff]/g,function(c){return '\\\\u'+('0000'+c.charCodeAt(0).toString(16)).slice(-4)}),parts=[MAGIC,String(head.length).padStart(12,'0'),head];
+    var head=JSON.stringify(manifest).replace(/[\u007f-\uffff]/g,function(c){return '\\u'+('0000'+c.charCodeAt(0).toString(16)).slice(-4)}),parts=[MAGIC,String(head.length).padStart(12,'0'),head];
     rows.forEach(function(x){parts.push(x.blob)});
     var archive=new Blob(parts,{type:'application/octet-stream'}),name='fotорамка-'+rows.length+'.ramkaphotos';
     var url=URL.createObjectURL(archive),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();document.body.removeChild(a);
