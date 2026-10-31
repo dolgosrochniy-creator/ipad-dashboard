@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Фоторамка Москва</title>
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020813;color:#dbe8f6;font-family:-apple-system,Arial,sans-serif}iframe{position:fixed;inset:0;width:100%;height:100%;border:0}#status{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-size:18px}#status.hidden{display:none}</style></head>
+<body><div id="status">Загружаем фоторамку…</div><iframe id="frame" title="Фоторамка Москва" allow="fullscreen"></iframe>
+<script>
+(function(){
+ var frame=document.getElementById('frame'),status=document.getElementById('status'),approved='',fallback='ramka_moskva_v89.html';
+ function valid(name){return typeof name==='string'&&/^ramka_moskva_v[0-9]+\.html$/.test(name)}
+ function show(name){
+  if(!valid(name)||name===approved)return;
+  approved=name;
+  frame.src=name+'?release='+Date.now();
+ }
+ frame.addEventListener('load',function(){status.className='hidden'});
+ function check(){
+  var x=new XMLHttpRequest();x.timeout=12000;
+  x.onreadystatechange=function(){
+   if(x.readyState!==4)return;
+   if(x.status===200){try{var data=JSON.parse(x.responseText);if(valid(data.approved)){show(data.approved);return}}catch(e){}}
+   if(!approved)show(fallback);
+  };
+  x.ontimeout=function(){if(!approved)show(fallback)};
+  x.onerror=function(){if(!approved)show(fallback)};
+  x.open('GET','frame_release.json?nocache='+Date.now(),true);
+  try{x.setRequestHeader('Cache-Control','no-cache')}catch(e){}
+  x.send();
+ }
+ check();setInterval(check,30*60*1000);
+})();
+</script></body></html>
