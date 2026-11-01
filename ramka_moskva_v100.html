@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва · версия 100</title><style>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020813;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif}
 #day{display:block;position:fixed;inset:0;width:100%;height:100%;border:0;background:#091525}
 #night{display:none;position:fixed;inset:0;width:100%;height:100%;overflow:hidden;color:#aebacc;background:linear-gradient(180deg,#152b42 0%,#182e44 35%,#172638 60%,#081321 100%)}
@@ -28,7 +28,7 @@
 #frameFile{display:none}#photoImportStatus{display:none;position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:11000;background:rgba(5,19,34,.96);border:1px solid #83b3c9;color:white;border-radius:14px;padding:14px 18px;font:16px Arial,sans-serif;text-align:center;min-width:250px;max-width:90vw}#photoImportStatus.visible{display:block}#photoImportProgress{height:7px;background:#35485c;border-radius:8px;margin-top:10px;overflow:hidden}#photoImportBar{height:100%;width:0%;background:#78b7d8;transition:width .15s}
 #testModeButton.frameHidden{display:none}#returnToPhotos{display:none;position:fixed;right:12px;bottom:62px;z-index:9000;background:rgba(15,54,75,.93);color:#fff;border:1px solid #83b3c9;border-radius:12px;padding:11px 16px;font-size:16px;cursor:pointer}#returnToPhotos.visible{display:block}
 #morningToPhotos{display:none;position:fixed;right:12px;bottom:62px;z-index:6900;background:rgba(15,54,75,.93);color:#fff;border:1px solid #83b3c9;border-radius:12px;padding:11px 16px;font-size:16px}#morningToPhotos.visible{display:block}</style><style id="frameHideArchiveImport">#frameImport,#frameFirstImport{display:none!important}</style>
-</head><body><iframe id="day" src="ramka_moskva_v89_day.html" title="Дневной экран версии 89"></iframe><div id="frameShow"><div id="frameA" class="frameImage"></div><div id="frameB" class="frameImage"></div><div id="frameClock">--:--</div><div id="frameDate"></div><div id="frameEmpty"><div style="font-size:28px">Моя фоторамка</div><div>Добавьте фотографии с iPad, чтобы запустить слайд-шоу</div><button id="frameFirstAdd">Добавить фотографии</button><button id="frameFirstImport" type="button">Загрузить архив</button></div><div id="frameActions"><button id="frameAdd">＋ Фото</button><button id="frameNext">Следующее</button><button id="frameDelete">Удалить фото</button><button id="framePanel">Панель</button><button id="frameCount" type="button">Фото: …</button><button id="frameAudit" type="button">Проверить коллекцию</button><button id="frameExport" type="button">Сохранить архив</button><button id="frameImport" type="button">Загрузить архив</button></div><input id="frameFile" type="file" accept="image/*" multiple><input id="frameAuditFile" type="file" accept="image/*" multiple style="display:none"><div id="archiveProgress" style="position:fixed;top:12px;left:12px;right:12px;background:#172538;color:white;padding:12px;border-radius:12px;z-index:99999;display:none;font:16px sans-serif"><span id="archiveProgressText">Подготовка…</span><div style="background:#53616c;height:8px;border-radius:8px;margin-top:8px"><div id="archiveProgressBar" style="background:#61cfb7;width:0%;height:100%;border-radius:8px"></div></div></div><input id="frameArchiveFile" type="file" accept=".ramkaphotos,application/octet-stream" style="display:none"><div id="photoImportStatus" role="status"><span id="photoImportText">Подготовка…</span><div id="photoImportProgress"><div id="photoImportBar"></div></div></div></div><button id="returnToPhotos" type="button">Фото ↩</button><button id="morningToPhotos" type="button">Фото ↩</button><a id="zontMainLink" href="https://lk.zont-online.ru/" target="_blank" rel="noopener noreferrer">♨ Котёл · Дача</a><button id="nightPhotoAccess" type="button" style="position:fixed;right:14px;top:14px;z-index:12000;background:#233b55;color:#fff;border:1px solid #7b91a8;border-radius:12px;padding:12px 16px;font-size:18px">Фото</button><div id="night"><div id="photo"></div><div id="date"></div><div id="clock">--:--</div><div id="footer"><div>Пекин&nbsp; <strong id="beijing">--:--</strong> <span id="beijingWeather" style="font-size:.78em;white-space:nowrap"><span id="beijingTemp">—°</span> <span id="beijingIcon">☁</span></span></div><div class="sep"></div><div>Москва&nbsp; <strong id="temp">—°</strong> <span id="icon">☁</span></div></div></div><div id="freshDot" title="Актуальность данных"></div><div id="freshInfo"></div><button id="testModeButton" type="button">Режимы</button><div id="menu"><button data-mode="morning">Утро</button><button data-mode="day">День</button><button data-mode="evening">Вечер</button><button data-mode="night">Тусклая ночь</button><button data-mode="deep">Глубокая ночь</button><button id="wallMorning" type="button">Обои · утро</button><button id="wallDay" type="button">Обои · день</button><button id="wallEvening" type="button">Обои · вечер</button><button id="close">×</button></div><input type="file" id="wallPicker" accept="image/*" style="display:none"><script>
+</head><body><iframe id="day" src="ramka_moskva_v101_day.html" title="Дневной экран версии 89"></iframe><div id="frameShow"><div id="frameA" class="frameImage"></div><div id="frameB" class="frameImage"></div><div id="frameClock">--:--</div><div id="frameDate"></div><div id="frameEmpty"><div style="font-size:28px">Моя фоторамка</div><div>Добавьте фотографии с iPad, чтобы запустить слайд-шоу</div><button id="frameFirstAdd">Добавить фотографии</button><button id="frameFirstImport" type="button">Загрузить архив</button></div><div id="frameActions"><button id="frameAdd">＋ Фото</button><button id="frameNext">Следующее</button><button id="frameDelete">Удалить фото</button><button id="framePanel">Панель</button><button id="frameCount" type="button">Фото: …</button><button id="frameAudit" type="button">Проверить коллекцию</button><button id="frameExport" type="button">Сохранить архив</button><button id="frameImport" type="button">Загрузить архив</button></div><input id="frameFile" type="file" accept="image/*" multiple><input id="frameAuditFile" type="file" accept="image/*" multiple style="display:none"><div id="archiveProgress" style="position:fixed;top:12px;left:12px;right:12px;background:#172538;color:white;padding:12px;border-radius:12px;z-index:99999;display:none;font:16px sans-serif"><span id="archiveProgressText">Подготовка…</span><div style="background:#53616c;height:8px;border-radius:8px;margin-top:8px"><div id="archiveProgressBar" style="background:#61cfb7;width:0%;height:100%;border-radius:8px"></div></div></div><input id="frameArchiveFile" type="file" accept=".ramkaphotos,application/octet-stream" style="display:none"><div id="photoImportStatus" role="status"><span id="photoImportText">Подготовка…</span><div id="photoImportProgress"><div id="photoImportBar"></div></div></div></div><button id="returnToPhotos" type="button">Фото ↩</button><button id="morningToPhotos" type="button">Фото ↩</button><a id="zontMainLink" href="https://lk.zont-online.ru/" target="_blank" rel="noopener noreferrer">♨ Котёл · Дача</a><button id="nightPhotoAccess" type="button" style="position:fixed;right:14px;top:14px;z-index:12000;background:#233b55;color:#fff;border:1px solid #7b91a8;border-radius:12px;padding:12px 16px;font-size:18px">Фото</button><div id="night"><div id="photo"></div><div id="date"></div><div id="clock">--:--</div><div id="footer"><div>Пекин&nbsp; <strong id="beijing">--:--</strong> <span id="beijingWeather" style="font-size:.78em;white-space:nowrap"><span id="beijingTemp">—°</span> <span id="beijingIcon">☁</span></span></div><div class="sep"></div><div>Москва&nbsp; <strong id="temp">—°</strong> <span id="icon">☁</span></div></div></div><div id="freshDot" title="Актуальность данных"></div><div id="freshInfo"></div><button id="testModeButton" type="button">Режимы</button><div id="menu"><button data-mode="morning">Утро</button><button data-mode="day">День</button><button data-mode="evening">Вечер</button><button data-mode="night">Тусклая ночь</button><button data-mode="deep">Глубокая ночь</button><button id="wallMorning" type="button">Обои · утро</button><button id="wallDay" type="button">Обои · день</button><button id="wallEvening" type="button">Обои · вечер</button><button id="close">×</button></div><input type="file" id="wallPicker" accept="image/*" style="display:none"><script>
 /* Compact local photo storage: one JPEG per selected picture, capped for iPad display. */
 window.frameCompress=function(blob,callback){
  var url=URL.createObjectURL(blob),img=new Image();
@@ -319,4 +319,71 @@ document.body.classList.remove('dashboardButtonsVisible');
   });
  };
 })();
-</script></body></html>
+</script><style id="v101-enhancements">
+/* Night fades over the daytime dashboard without changing its schedule. */
+#night{display:block!important;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 2.5s ease,visibility 0s linear 2.5s;z-index:25}
+#night.active{opacity:1;visibility:visible;pointer-events:auto;transition:opacity 2.5s ease,visibility 0s}
+#night #clock,#night #date,#night #footer{transition:filter .8s ease,opacity .8s ease}
+#night.nightAwake #clock,#night.nightAwake #date,#night.nightAwake #footer{filter:brightness(1.65)}
+body:not(.dashboardButtonsVisible) #nightPhotoAccess{display:none!important}
+body.dashboardButtonsVisible #testModeButton{display:block!important;z-index:12002!important}
+#weatherNoticeV101{display:none;position:fixed;left:14px;bottom:12px;max-width:68%;z-index:12001;padding:7px 12px;border-radius:10px;background:rgba(10,25,42,.84);color:#e9f0fa;font:14px -apple-system,BlinkMacSystemFont,Arial,sans-serif;pointer-events:none}
+#weatherNoticeV101.visible{display:block}
+#night.active ~ #weatherNoticeV101{opacity:.4}
+</style>
+<script id="v101-enhancements-script">
+(function(){
+ 'use strict';
+ var night=document.getElementById('night'),menu=document.getElementById('menu');
+ var timer=null;
+ function wake(){
+  if(!night.classList.contains('active'))return;
+  night.classList.add('nightAwake');
+  document.body.classList.add('dashboardButtonsVisible');
+  clearTimeout(timer);
+  timer=setTimeout(function(){
+   night.classList.remove('nightAwake');
+   if(!menu.classList.contains('show'))document.body.classList.remove('dashboardButtonsVisible');
+  },10000);
+ }
+ night.addEventListener('click',wake,false);
+ night.addEventListener('touchstart',wake,{passive:true});
+ var button=document.getElementById('testModeButton');
+ button.addEventListener('click',wake,false);
+ var notice=document.createElement('div');
+ notice.id='weatherNoticeV101';
+ notice.setAttribute('aria-live','polite');
+ document.body.appendChild(notice);
+ function requestWeather(){
+  if(!navigator.onLine){notice.classList.remove('visible');return}
+  var x=new XMLHttpRequest();
+  x.timeout=12000;
+  x.onreadystatechange=function(){
+   if(x.readyState!==4)return;
+   if(x.status!==200){notice.classList.remove('visible');return}
+   try{
+    var d=JSON.parse(x.responseText),h=d.hourly||{},times=h.time||[];
+    var now=Date.now(),end=now+12*3600000,alerts=[];
+    for(var i=0;i<times.length;i++){
+     var ts=Date.parse(times[i]+'+03:00');
+     if(!(ts>=now-3600000&&ts<=end))continue;
+     var wind=(h.wind_gusts_10m||[])[i],snow=(h.snowfall||[])[i],rain=(h.precipitation||[])[i],temp=(h.temperature_2m||[])[i];
+     if(typeof wind==='number'&&wind>=20)alerts.push({priority:4,text:'Сильные порывы ветра до '+Math.round(wind)+' м/с'});
+     if(typeof snow==='number'&&snow>=1.5)alerts.push({priority:3,text:'Ожидается сильный снег'});
+     if(typeof rain==='number'&&rain>=6)alerts.push({priority:2,text:'Ожидаются сильные осадки'});
+     if(typeof temp==='number'&&temp<=-20)alerts.push({priority:1,text:'Сильный мороз: '+Math.round(temp)+'°'});
+    }
+    alerts.sort(function(a,b){return b.priority-a.priority});
+    if(alerts.length){notice.textContent='Москва · прогноз: '+alerts[0].text;notice.classList.add('visible')}
+    else{notice.textContent='';notice.classList.remove('visible')}
+   }catch(e){notice.classList.remove('visible')}
+  };
+  x.onerror=function(){notice.classList.remove('visible')};
+  x.ontimeout=function(){notice.classList.remove('visible')};
+  x.open('GET','https://api.open-meteo.com/v1/forecast?latitude=55.7558&longitude=37.6173&hourly=temperature_2m,precipitation,snowfall,wind_gusts_10m&wind_speed_unit=ms&timezone=Europe%2FMoscow&forecast_days=2',true);
+  x.send();
+ }
+ requestWeather();setInterval(requestWeather,30*60000);
+})();
+</script>
+</body></html>
