@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
+<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-01-remote-v1"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020813;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif}
 #day{display:block;position:fixed;inset:0;width:100%;height:100%;border:0;background:#091525}
 #night{display:none;position:fixed;inset:0;width:100%;height:100%;overflow:hidden;color:#aebacc;background:linear-gradient(180deg,#152b42 0%,#182e44 35%,#172638 60%,#081321 100%)}
@@ -386,4 +386,24 @@ body.dashboardButtonsVisible #testModeButton{display:block!important;z-index:120
  requestWeather();setInterval(requestWeather,30*60000);
 })();
 </script>
-</body></html>
+<script id="remote-frame-updater">
+(function(){
+ var current=document.querySelector('meta[name="frame-build"]');
+ if(!current||!window.fetch)return;
+ var version=current.getAttribute('content'),lastReload=0;
+ function check(){
+  if(!navigator.onLine||document.hidden)return;
+  fetch('ramka_moskva_v100.html?remote_check='+Date.now(),{cache:'no-store'})
+   .then(function(r){if(!r.ok)throw Error('offline');return r.text()})
+   .then(function(html){
+    var m=html.match(/<meta name="frame-build" content="([^"]+)"/);
+    if(!m||m[1]===version||Date.now()-lastReload<60000)return;
+    lastReload=Date.now();
+    var u=new URL('ramka_moskva_v100.html',location.href);
+    u.searchParams.set('build',m[1]);
+    location.replace(u.href);
+   }).catch(function(){});
+ }
+ setInterval(check,15*60*1000);
+})();
+</script></body></html>
