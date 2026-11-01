@@ -89,7 +89,7 @@ function addFiles(list){
  existingReq.onerror=function(){loading=false;status.classList.remove('visible');alert('Не удалось проверить сохранённые фотографии')};
  existingReq.onsuccess=function(){
   var seen={},old=existingReq.result||[];
-  old.forEach(function(x){if(x.blob)seen[(x.name||'')+'|'+x.blob.size]=true});
+  old.forEach(function(x){if(x.blob)seen[(x.name||'')+'|'+(x.originalSize||x.blob.size)]=true});
   var unique=[],skipped=0;
   arr.forEach(function(f){var key=(f.name||'')+'|'+f.size;if(seen[key])skipped++;else{seen[key]=true;unique.push(f)}});
   if(!unique.length){loading=false;status.classList.remove('visible');alert('Все '+arr.length+' фотографий уже добавлены');return}
@@ -122,7 +122,7 @@ auditFile.onchange=function(){
  req.onerror=function(){alert('Ошибка проверки коллекции')};
  req.onsuccess=function(){
   var seen={},existing=req.result||[],missing=[],already=0,duplicateSelection=0,selected={};
-  existing.forEach(function(x){if(x.blob)seen[(x.name||'')+'|'+x.blob.size]=true});
+  existing.forEach(function(x){if(x.blob)seen[(x.name||'')+'|'+(x.originalSize||x.blob.size)]=true});
   files.forEach(function(f){
    var key=(f.name||'')+'|'+f.size;
    if(selected[key])duplicateSelection++;
@@ -294,8 +294,8 @@ document.body.classList.remove('dashboardButtonsVisible');
      req.onerror=function(){fail(new Error('Не удалось проверить уже загруженные фотографии'))};
      req.onsuccess=function(){
       var saved=req.result||[],seen={};
-      saved.forEach(function(x){if(x.blob)seen[(x.name||'')+'|'+x.blob.size]=true});
-      var missing=entries.filter(function(x){var key=(x.name||'')+'|'+x.blob.size;if(seen[key])return false;seen[key]=true;return true});
+      saved.forEach(function(x){if(x.blob)seen[(x.name||'')+'|'+(x.originalSize||x.blob.size)]=true});
+      var missing=entries.filter(function(x){var key=(x.name||'')+'|'+(x.originalSize||x.blob.size);if(seen[key])return false;seen[key]=true;return true});
       if(!missing.length){busy=false;progress.style.display='none';alert('Все '+entries.length+' фотографий уже загружены.');location.reload();return}
       if(!confirm('В архиве '+entries.length+' фотографий. Уже сохранено: '+saved.length+'. Добавить '+missing.length+' недостающих?')){busy=false;return}
       var pos=0;
