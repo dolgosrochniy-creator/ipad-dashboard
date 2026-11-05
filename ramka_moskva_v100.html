@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-05-remote-v10"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
+<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-05-remote-v11"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020813;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif}
 #day{display:block;position:fixed;inset:0;width:100%;height:100%;border:0;background:#091525}
 #night{display:none;position:fixed;inset:0;width:100%;height:100%;overflow:hidden;color:#aebacc;background:linear-gradient(180deg,#152b42 0%,#182e44 35%,#172638 60%,#081321 100%)}
@@ -104,7 +104,7 @@ frame.addEventListener('click',function(e){if(e.target.closest&&e.target.closest
 function shufflePhotos(){for(var j=photos.length-1;j>0;j--){var k=Math.floor(Math.random()*(j+1)),tmp=photos[j];photos[j]=photos[k];photos[k]=tmp}index=-1}
 document.getElementById('morningToPhotos').onclick=function(){photoOverrideUntil=Date.now()+(window.ramkaImportMode?7200000:300000);forcePanel=false;tick()};
 function openDB(){if(!window.indexedDB){empty.querySelector('div:nth-child(2)').textContent='Хранение фотографий недоступно в этом режиме Safari';return}var req=indexedDB.open('ramka_personal_photos',1);req.onupgradeneeded=function(){if(!req.result.objectStoreNames.contains('images'))req.result.createObjectStore('images',{keyPath:'id',autoIncrement:true})};req.onsuccess=function(){db=req.result;reload()};req.onerror=function(){empty.querySelector('div:nth-child(2)').textContent='Не удалось открыть хранилище фотографий'}}
-function reload(){if(!db)return;var tx=db.transaction('images','readonly'),req=tx.objectStore('images').getAll();req.onsuccess=function(){photos=req.result||[];document.getElementById('frameCount').textContent='Фото: '+photos.length+' / 281';shufflePhotos();if(active){if(photos.length&&!currentURL)next();showEmpty()}}}
+function reload(){if(!db)return;var tx=db.transaction('images','readonly'),req=tx.objectStore('images').getAll();req.onsuccess=function(){photos=req.result||[];document.getElementById('frameCount').textContent='Фото: '+photos.length;shufflePhotos();if(active){if(photos.length&&!currentURL)next();showEmpty()}}}
 function showEmpty(){empty.classList.toggle('visible',photos.length===0)}
 var lastOrientation='',photoKinds={},photoFailCount=0;
 function next(){
@@ -201,7 +201,7 @@ auditFile.onchange=function(){
 
 document.getElementById('frameFirstAdd').onclick=document.getElementById('frameAdd').onclick=function(){file.click()};
 document.getElementById('frameNext').onclick=function(){next()};
-document.getElementById('frameCount').onclick=function(){alert('В фоторамке сохранено '+photos.length+' фотографий из 281. Осталось добавить: '+Math.max(0,281-photos.length)+'.')};
+document.getElementById('frameCount').onclick=function(){alert('В фоторамке сохранено '+photos.length+' фотографий.')};
 document.getElementById('frameDelete').onclick=function(){
  if(!db||index<0||!photos[index])return;
  if(!confirm('Удалить эту фотографию из фоторамки? Оригинал в приложении «Фото» останется.'))return;
