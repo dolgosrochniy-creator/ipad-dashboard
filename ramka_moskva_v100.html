@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-05-remote-v7"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
+<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-05-remote-v8"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020813;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif}
 #day{display:block;position:fixed;inset:0;width:100%;height:100%;border:0;background:#091525}
 #night{display:none;position:fixed;inset:0;width:100%;height:100%;overflow:hidden;color:#aebacc;background:linear-gradient(180deg,#152b42 0%,#182e44 35%,#172638 60%,#081321 100%)}
@@ -47,6 +47,11 @@
 #night.deep #photo,#night.deep #date,#night.deep #footer{display:none!important}
 #night.deep #clock{color:#111820!important;opacity:.6!important;text-shadow:none!important;font-weight:300!important}
 #night.deep:before,#night.deep:after{display:none!important}
+</style><style id="frame-polish-v8">
+/* Subtle movement only in blurred backdrop; full photograph remains stationary and uncropped. */
+@keyframes frameAmbientDrift{0%{transform:scale(1) translateX(0)}100%{transform:scale(1.045) translateX(-.6%)}}
+#frameShow .frameImage.active::before{animation:frameAmbientDrift 180s ease-in-out alternate infinite}
+@media (prefers-reduced-motion:reduce){#frameShow .frameImage.active::before{animation:none}}
 </style></head><body><iframe id="day" src="ramka_moskva_v101_day.html" title="Дневной экран версии 89"></iframe><div id="frameShow"><div id="frameA" class="frameImage"></div><div id="frameB" class="frameImage"></div><div id="frameClock">--:--</div><div id="frameDate"></div><div id="frameEmpty"><div style="font-size:28px">Моя фоторамка</div><div>Добавьте фотографии с iPad, чтобы запустить слайд-шоу</div><button id="frameFirstAdd">Добавить фотографии</button><button id="frameFirstImport" type="button">Загрузить архив</button></div><div id="frameActions"><button id="frameAdd">＋ Фото</button><button id="frameNext">Следующее</button><button id="frameDelete">Удалить фото</button><button id="framePanel">Панель</button><button id="frameCount" type="button">Фото: …</button><button id="frameAudit" type="button">Проверить коллекцию</button><button id="frameExport" type="button">Сохранить архив</button><button id="frameImport" type="button">Загрузить архив</button></div><input id="frameFile" type="file" accept="image/*" multiple><input id="frameAuditFile" type="file" accept="image/*" multiple style="display:none"><div id="archiveProgress" style="position:fixed;top:12px;left:12px;right:12px;background:#172538;color:white;padding:12px;border-radius:12px;z-index:99999;display:none;font:16px sans-serif"><span id="archiveProgressText">Подготовка…</span><div style="background:#53616c;height:8px;border-radius:8px;margin-top:8px"><div id="archiveProgressBar" style="background:#61cfb7;width:0%;height:100%;border-radius:8px"></div></div></div><input id="frameArchiveFile" type="file" accept=".ramkaphotos,application/octet-stream" style="display:none"><div id="photoImportStatus" role="status"><span id="photoImportText">Подготовка…</span><div id="photoImportProgress"><div id="photoImportBar"></div></div></div></div><button id="returnToPhotos" type="button">Фото ↩</button><button id="morningToPhotos" type="button">Фото ↩</button><a id="zontMainLink" href="https://lk.zont-online.ru/" target="_blank" rel="noopener noreferrer">♨ Котёл · Дача</a><button id="nightPhotoAccess" type="button" style="position:fixed;right:14px;top:14px;z-index:12000;background:#233b55;color:#fff;border:1px solid #7b91a8;border-radius:12px;padding:12px 16px;font-size:18px">Фото</button><div id="night"><div id="photo"></div><div id="date"></div><div id="clock">--:--</div><div id="footer"><div>Пекин&nbsp; <strong id="beijing">--:--</strong> <span id="beijingWeather" style="font-size:.78em;white-space:nowrap"><span id="beijingTemp">—°</span> <span id="beijingIcon">☁</span></span></div><div class="sep"></div><div>Москва&nbsp; <strong id="temp">—°</strong> <span id="icon">☁</span></div></div></div><div id="freshDot" title="Актуальность данных"></div><div id="freshInfo"></div><button id="testModeButton" type="button">Режимы</button><div id="menu"><button data-mode="morning">Утро</button><button data-mode="day">День</button><button data-mode="evening">Вечер</button><button data-mode="night">Тусклая ночь</button><button data-mode="deep">Глубокая ночь</button><button id="wallMorning" type="button">Обои · утро</button><button id="wallDay" type="button">Обои · день</button><button id="wallEvening" type="button">Обои · вечер</button><button id="close">×</button></div><input type="file" id="wallPicker" accept="image/*" style="display:none"><script>
 /* Compact local photo storage: one JPEG per selected picture, capped for iPad display. */
 window.frameCompress=function(blob,callback){
@@ -97,7 +102,40 @@ document.getElementById('morningToPhotos').onclick=function(){photoOverrideUntil
 function openDB(){if(!window.indexedDB){empty.querySelector('div:nth-child(2)').textContent='Хранение фотографий недоступно в этом режиме Safari';return}var req=indexedDB.open('ramka_personal_photos',1);req.onupgradeneeded=function(){if(!req.result.objectStoreNames.contains('images'))req.result.createObjectStore('images',{keyPath:'id',autoIncrement:true})};req.onsuccess=function(){db=req.result;reload()};req.onerror=function(){empty.querySelector('div:nth-child(2)').textContent='Не удалось открыть хранилище фотографий'}}
 function reload(){if(!db)return;var tx=db.transaction('images','readonly'),req=tx.objectStore('images').getAll();req.onsuccess=function(){photos=req.result||[];document.getElementById('frameCount').textContent='Фото: '+photos.length+' / 281';shufflePhotos();if(active){if(photos.length&&!currentURL)next();showEmpty()}}}
 function showEmpty(){empty.classList.toggle('visible',photos.length===0)}
-function next(){if(loadingSlide||!photos.length){showEmpty();return}loadingSlide=true;lastSlide=Date.now();index=(index+1)%photos.length;var blob=photos[index].blob;if(!blob){loadingSlide=false;return}var url=URL.createObjectURL(blob),image=new Image();image.onload=function(){if(window.ramkaSmartPhoto)window.ramkaSmartPhoto(image);back.style.backgroundImage='url("'+url+'")';back.classList.add('active');front.classList.remove('active');var old=previousURL;previousURL=currentURL;currentURL=url;var temp=front;front=back;back=temp;lastSlide=Date.now();loadingSlide=false;setTimeout(function(){if(old)URL.revokeObjectURL(old)},3500)};image.onerror=function(){URL.revokeObjectURL(url);loadingSlide=false;lastSlide=Date.now()};image.src=url}
+var lastOrientation='',photoKinds={},photoFailCount=0;
+function next(){
+ if(loadingSlide||!photos.length){showEmpty();return}
+ loadingSlide=true;lastSlide=Date.now();
+ index=(index+1)%photos.length;
+ if(photos.length>3&&lastOrientation){
+  for(var step=0;step<Math.min(20,photos.length-1);step++){
+   var pos=(index+step)%photos.length,kind=photoKinds[photos[pos].id];
+   if(kind&&kind!==lastOrientation){var tmp=photos[index];photos[index]=photos[pos];photos[pos]=tmp;break}
+  }
+ }
+ var record=photos[index],blob=record&&record.blob;
+ if(!blob){loadingSlide=false;setTimeout(next,500);return}
+ var url=URL.createObjectURL(blob),image=new Image(),finished=false;
+ var watchdog=setTimeout(function(){fail()},12000);
+ function fail(){
+  if(finished)return;finished=true;clearTimeout(watchdog);
+  image.onload=null;image.onerror=null;URL.revokeObjectURL(url);
+  loadingSlide=false;lastSlide=Date.now();photoFailCount++;
+  if(photoFailCount<Math.min(photos.length,6))setTimeout(next,1500);
+ }
+ image.onload=function(){
+  if(finished)return;finished=true;clearTimeout(watchdog);photoFailCount=0;
+  var kind=image.naturalHeight>image.naturalWidth*1.08?'portrait':image.naturalWidth>image.naturalHeight*1.08?'landscape':'square';
+  photoKinds[record.id]=kind;lastOrientation=kind;
+  if(window.ramkaSmartPhoto)window.ramkaSmartPhoto(image);
+  back.style.backgroundImage='url("'+url+'")';
+  back.classList.add('active');front.classList.remove('active');
+  var old=previousURL;previousURL=currentURL;currentURL=url;
+  var temp=front;front=back;back=temp;lastSlide=Date.now();loadingSlide=false;
+  setTimeout(function(){if(old)URL.revokeObjectURL(old)},3500);
+ };
+ image.onerror=fail;image.src=url;
+}
 function addFiles(list){
  if(!db||loading)return;
  var arr=Array.prototype.slice.call(list||[]).filter(function(f){return f.type.indexOf('image/')===0||/\\.(heic|heif|jpe?g|png|webp)$/i.test(f.name||'')});
