@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-05-remote-v11"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
+<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-05-remote-v12"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020813;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif}
 #day{display:block;position:fixed;inset:0;width:100%;height:100%;border:0;background:#091525}
 #night{display:none;position:fixed;inset:0;width:100%;height:100%;overflow:hidden;color:#aebacc;background:linear-gradient(180deg,#152b42 0%,#182e44 35%,#172638 60%,#081321 100%)}
@@ -49,13 +49,16 @@
 #night.deep:before,#night.deep:after{display:none!important}
 </style><style id="frame-polish-v8">
 /* Subtle movement only in blurred backdrop; full photograph remains stationary and uncropped. */
-@keyframes frameAmbientDrift{0%{transform:scale(1) translateX(0)}100%{transform:scale(1.045) translateX(-.6%)}}
-#frameShow .frameImage.active::before{animation:frameAmbientDrift 180s ease-in-out alternate infinite}
+@keyframes frameAmbientDrift{0%{transform:scale(1.02) translateX(.8%)}100%{transform:scale(1.13) translateX(-1.2%)}}
+#frameShow .frameImage.active::before{animation:frameAmbientDrift 85s ease-in-out alternate infinite}
 @media (prefers-reduced-motion:reduce){#frameShow .frameImage.active::before{animation:none}}
 </style><style id="frame-counter-v9">#frameShow.controlsVisible #frameCount{display:inline-flex!important;align-items:center;pointer-events:none;opacity:.8;font-size:13px;padding:9px 11px}</style><style id="frame-update-info-v10">
 #frameShow #frameUpdateInfo{font-size:13px;padding:9px 11px}
 #frameUpdateMessage{display:none;position:absolute;bottom:82px;right:16px;z-index:5;background:rgba(5,16,29,.94);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:12px;padding:14px 18px;font:16px -apple-system,BlinkMacSystemFont,Arial,sans-serif;pointer-events:none}
 #frameUpdateMessage.visible{display:block}
+</style><style id="frame-motion-v12">
+/* Only blurred background moves; photo foreground stays fully visible. */
+#frameShow .frameImage::before{will-change:transform}
 </style></head><body><iframe id="day" src="ramka_moskva_v101_day.html" title="Дневной экран версии 89"></iframe><div id="frameShow"><div id="frameA" class="frameImage"></div><div id="frameB" class="frameImage"></div><div id="frameClock">--:--</div><div id="frameDate"></div><div id="frameEmpty"><div style="font-size:28px">Моя фоторамка</div><div>Добавьте фотографии с iPad, чтобы запустить слайд-шоу</div><button id="frameFirstAdd">Добавить фотографии</button><button id="frameFirstImport" type="button">Загрузить архив</button></div><div id="frameActions"><button id="frameAdd">＋ Фото</button><button id="frameNext">Следующее</button><button id="frameDelete">Удалить фото</button><button id="framePanel">Панель</button><button id="frameCount" type="button">Фото: …</button><button id="frameUpdateInfo" type="button">Обновление</button><button id="frameAudit" type="button">Проверить коллекцию</button><button id="frameExport" type="button">Сохранить архив</button><button id="frameImport" type="button">Загрузить архив</button></div><input id="frameFile" type="file" accept="image/*" multiple><input id="frameAuditFile" type="file" accept="image/*" multiple style="display:none"><div id="archiveProgress" style="position:fixed;top:12px;left:12px;right:12px;background:#172538;color:white;padding:12px;border-radius:12px;z-index:99999;display:none;font:16px sans-serif"><span id="archiveProgressText">Подготовка…</span><div style="background:#53616c;height:8px;border-radius:8px;margin-top:8px"><div id="archiveProgressBar" style="background:#61cfb7;width:0%;height:100%;border-radius:8px"></div></div></div><input id="frameArchiveFile" type="file" accept=".ramkaphotos,application/octet-stream" style="display:none"><div id="photoImportStatus" role="status"><span id="photoImportText">Подготовка…</span><div id="photoImportProgress"><div id="photoImportBar"></div></div></div></div><button id="returnToPhotos" type="button">Фото ↩</button><button id="morningToPhotos" type="button">Фото ↩</button><a id="zontMainLink" href="https://lk.zont-online.ru/" target="_blank" rel="noopener noreferrer">♨ Котёл · Дача</a><button id="nightPhotoAccess" type="button" style="position:fixed;right:14px;top:14px;z-index:12000;background:#233b55;color:#fff;border:1px solid #7b91a8;border-radius:12px;padding:12px 16px;font-size:18px">Фото</button><div id="night"><div id="photo"></div><div id="date"></div><div id="clock">--:--</div><div id="footer"><div>Пекин&nbsp; <strong id="beijing">--:--</strong> <span id="beijingWeather" style="font-size:.78em;white-space:nowrap"><span id="beijingTemp">—°</span> <span id="beijingIcon">☁</span></span></div><div class="sep"></div><div>Москва&nbsp; <strong id="temp">—°</strong> <span id="icon">☁</span></div></div></div><div id="freshDot" title="Актуальность данных"></div><div id="freshInfo"></div><button id="testModeButton" type="button">Режимы</button><div id="menu"><button data-mode="morning">Утро</button><button data-mode="day">День</button><button data-mode="evening">Вечер</button><button data-mode="night">Тусклая ночь</button><button data-mode="deep">Глубокая ночь</button><button id="wallMorning" type="button">Обои · утро</button><button id="wallDay" type="button">Обои · день</button><button id="wallEvening" type="button">Обои · вечер</button><button id="close">×</button></div><input type="file" id="wallPicker" accept="image/*" style="display:none"><script>
 /* Compact local photo storage: one JPEG per selected picture, capped for iPad display. */
 window.frameCompress=function(blob,callback){
@@ -101,7 +104,31 @@ var db=null,photos=[],index=-1,front=a,back=b,currentURL=null,previousURL=null,l
 function hideControls(){frame.classList.remove('controlsVisible')}
 function revealControls(){frame.classList.add('controlsVisible');clearTimeout(controlsTimer);controlsTimer=setTimeout(hideControls,7000)}
 frame.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('button')){revealControls();return}if(frame.classList.contains('controlsVisible'))hideControls();else revealControls()});
-function shufflePhotos(){for(var j=photos.length-1;j>0;j--){var k=Math.floor(Math.random()*(j+1)),tmp=photos[j];photos[j]=photos[k];photos[k]=tmp}index=-1}
+function shufflePhotos(){
+ for(var j=photos.length-1;j>0;j--){var k=Math.floor(Math.random()*(j+1)),tmp=photos[j];photos[j]=photos[k];photos[k]=tmp}
+ index=-1;photoKinds={};lastOrientation='';classifyPhotos();
+}
+var classifyTimer=null,classifyGeneration=0;
+function classifyPhotos(){
+ clearTimeout(classifyTimer);var generation=++classifyGeneration,pos=0;
+ function work(){
+  if(generation!==classifyGeneration||!photos.length)return;
+  if(pos>=photos.length)return;
+  var record=photos[pos++];if(!record||!record.blob){classifyTimer=setTimeout(work,400);return}
+  var url=URL.createObjectURL(record.blob),img=new Image(),finished=false;
+  var timer=setTimeout(done,7000);
+  function done(){
+   if(finished)return;finished=true;clearTimeout(timer);img.onload=null;img.onerror=null;URL.revokeObjectURL(url);
+   classifyTimer=setTimeout(work,500);
+  }
+  img.onload=function(){
+   photoKinds[record.id]=img.naturalHeight>img.naturalWidth*1.08?'portrait':img.naturalWidth>img.naturalHeight*1.08?'landscape':'square';
+   done();
+  };
+  img.onerror=done;img.src=url;
+ }
+ classifyTimer=setTimeout(work,800);
+}
 document.getElementById('morningToPhotos').onclick=function(){photoOverrideUntil=Date.now()+(window.ramkaImportMode?7200000:300000);forcePanel=false;tick()};
 function openDB(){if(!window.indexedDB){empty.querySelector('div:nth-child(2)').textContent='Хранение фотографий недоступно в этом режиме Safari';return}var req=indexedDB.open('ramka_personal_photos',1);req.onupgradeneeded=function(){if(!req.result.objectStoreNames.contains('images'))req.result.createObjectStore('images',{keyPath:'id',autoIncrement:true})};req.onsuccess=function(){db=req.result;reload()};req.onerror=function(){empty.querySelector('div:nth-child(2)').textContent='Не удалось открыть хранилище фотографий'}}
 function reload(){if(!db)return;var tx=db.transaction('images','readonly'),req=tx.objectStore('images').getAll();req.onsuccess=function(){photos=req.result||[];document.getElementById('frameCount').textContent='Фото: '+photos.length;shufflePhotos();if(active){if(photos.length&&!currentURL)next();showEmpty()}}}
@@ -118,7 +145,7 @@ function next(){
   }
  }
  var record=photos[index],blob=record&&record.blob;
- if(!blob){loadingSlide=false;setTimeout(next,500);return}
+ if(!blob){loadingSlide=false;lastSlide=Date.now();photoFailCount++;if(photoFailCount<Math.min(photos.length,6))setTimeout(next,1500);return}
  var url=URL.createObjectURL(blob),image=new Image(),finished=false;
  var watchdog=setTimeout(function(){fail()},12000);
  function fail(){
