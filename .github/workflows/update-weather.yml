@@ -1,6 +1,10 @@
 name: Update dashboard weather
 
 on:
+  push:
+    paths:
+      - 'scripts/update_weather.py'
+      - '.github/workflows/update-weather.yml'
   workflow_dispatch:
   schedule:
     - cron: '*/30 * * * *'
