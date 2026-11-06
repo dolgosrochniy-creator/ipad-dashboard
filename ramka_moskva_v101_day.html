@@ -285,11 +285,17 @@ function forecast(city,lat,lon,zone){
    fetch(url+'&t='+now,function(d2){if(!accept(d2))fail()});
   });
  }else{
-  fetch(url+'&t='+now,function(d){
-   if(accept(d))return;
-   fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone='+encodeURIComponent(zone)+'&forecast_days=7&t='+Date.now(),function(d2){if(!accept(d2))fail()});
+  // Try the locally published Beijing forecast first: direct Open-Meteo can be blocked on older iPad networks.
+  fetch('weather_beijing.json?v='+now,function(local){
+   if(valid(local)){accept(local);return}
+   fetch(url+'&t='+now,function(d){
+    if(accept(d))return;
+    fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone='+encodeURIComponent(zone)+'&forecast_days=7&t='+Date.now(),function(d2){if(!accept(d2))fail()});
+   });
   });
  }
+ // Ensure an unreachable provider cannot leave the panel on "Загрузка" indefinitely.
+ setTimeout(function(){if(shade.classList.contains('show')&&body.textContent.indexOf('Загрузка прогноза')>=0)fail()},42000);
 }
 function open(card,beijing){clearTimeout(timer);body.innerHTML='';shade.classList.add('show');document.getElementById('zoomPanel').scrollTop=0;timer=setTimeout(close,60000);if(beijing)forecast('Пекин',39.9042,116.4074,'Asia/Shanghai');else if(card.classList.contains('weather'))forecast('Москва',55.7558,37.6173,'Europe/Moscow');else{var clone=card.cloneNode(true);body.appendChild(clone);if(card.querySelector('#stockRows')){var stockNote=document.createElement('div');stockNote.className='finnhub-settings';stockNote.innerHTML='<p>Finnhub API Key — сохраняется только в Safari на этом устройстве.</p><input id="finnhubKeyInput" type="password" placeholder="Вставьте ключ Finnhub" autocomplete="off"><button id="finnhubSaveBtn" type="button">Сохранить ключ</button><button id="finnhubClearBtn" type="button">Удалить ключ</button>';body.appendChild(stockNote);var inp=stockNote.querySelector('#finnhubKeyInput');try{inp.value=localStorage.getItem('ramka_finnhub_key')||''}catch(e){}stockNote.querySelector('#finnhubSaveBtn').onclick=function(ev){ev.stopPropagation();var k=inp.value.trim();if(!k)return;try{localStorage.setItem('ramka_finnhub_key',k);window.dispatchEvent(new Event('ramkaFinnhubChanged'));close()}catch(e){alert('Не удалось сохранить ключ в Safari')}};stockNote.querySelector('#finnhubClearBtn').onclick=function(ev){ev.stopPropagation();try{localStorage.removeItem('ramka_finnhub_key');window.dispatchEvent(new Event('ramkaFinnhubChanged'));close()}catch(e){}}}if(card.querySelector('#agendaRows')){var list=clone.querySelector('#agendaRows');list.innerHTML='';var events=window.ramkaUpcoming?window.ramkaUpcoming():[];if(events.length){events.slice(0,15).forEach(function(e){var row=document.createElement('div');row.className='event-row';var d=new Date(e.start);var when=document.createElement('small');when.textContent=new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Moscow',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}).format(d)+' МСК';var title=document.createElement('b');title.textContent=e.title||'Без названия';row.appendChild(when);row.appendChild(title);list.appendChild(row)})}else list.textContent='Ближайших событий нет'}}timer=setTimeout(close,30000)}
 Array.prototype.forEach.call(document.querySelectorAll('.cards>.card'),function(card){card.onclick=function(){open(card,false)}});
