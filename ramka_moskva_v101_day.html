@@ -272,25 +272,32 @@ document.querySelector('.pek').onclick=function(){open(null,true)};
 })();
 </script><script>
 (function(){
-/* NOAA solar equations: Moscow 55.7558 N, 37.6173 E; display MSK UTC+3 */
+/* Official local sunrise/sunset from Open-Meteo for Moscow; no UTC conversion ambiguity. */
 var el=document.getElementById('sunTimes');
-function solar(date){
- var jd=Date.UTC(date.y,date.m-1,date.d)/86400000+2440587.5, n=jd-2451545+0.0008, Jstar=n-37.6173/360;
- var M=(357.5291+0.98560028*Jstar)*Math.PI/180;
- var C=(1.9148*Math.sin(M)+0.0200*Math.sin(2*M)+0.0003*Math.sin(3*M))*Math.PI/180;
- var lam=M+C+102.9372*Math.PI/180+Math.PI;
- var transit=2451545+Jstar+0.0053*Math.sin(M)-0.0069*Math.sin(2*lam);
- var delta=Math.asin(Math.sin(lam)*Math.sin(23.44*Math.PI/180));
- var phi=55.7558*Math.PI/180;
- var cosH=(Math.sin(-0.833*Math.PI/180)-Math.sin(phi)*Math.sin(delta))/(Math.cos(phi)*Math.cos(delta));
- if(Math.abs(cosH)>1)return null;
- var H=Math.acos(cosH);
- var rise=transit-H/(2*Math.PI),set=transit+H/(2*Math.PI);
- return {rise:(rise-2440587.5)*86400000,set:(set-2440587.5)*86400000,duration:(set-rise)*1440};
+function update(){
+ var x=new XMLHttpRequest();x.timeout=12000;
+ x.onreadystatechange=function(){
+  if(x.readyState!==4)return;
+  if(x.status!==200){el.textContent='Время рассвета и заката временно недоступно';return}
+  try{
+   var d=JSON.parse(x.responseText),a=d.daily,dates=a&&a.time;
+   if(!dates||dates.length<2)throw Error('missing solar data');
+   var p=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Moscow',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()),o={};
+   p.forEach(function(v){o[v.type]=v.value});
+   var today=o.year+'-'+o.month+'-'+o.day,idx=dates.indexOf(today);
+   if(idx<1||!a.sunrise[idx]||!a.sunset[idx]||!a.sunrise[idx-1]||!a.sunset[idx-1])throw Error('missing dates');
+   function minutes(v){return Number(v.slice(11,13))*60+Number(v.slice(14,16))}
+   var duration=minutes(a.sunset[idx])-minutes(a.sunrise[idx]);
+   var previous=minutes(a.sunset[idx-1])-minutes(a.sunrise[idx-1]);
+   var diff=duration-previous,sign=diff>0?'+':diff<0?'−':'';
+   el.textContent='Рассвет '+a.sunrise[idx].slice(11,16)+' · Закат '+a.sunset[idx].slice(11,16);
+   var line=document.createElement('div');line.className='sunDiff';line.textContent=sign+Math.abs(diff)+' мин ко вчера';el.appendChild(line);
+  }catch(e){el.textContent='Время рассвета и заката временно недоступно'}
+ };
+ x.onerror=function(){el.textContent='Время рассвета и заката временно недоступно'};
+ x.ontimeout=x.onerror;
+ x.open('GET','https://api.open-meteo.com/v1/forecast?latitude=55.7558&longitude=37.6173&daily=sunrise,sunset&timezone=Europe%2FMoscow&past_days=1&forecast_days=1',true);x.send();
 }
-function mskParts(t){var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(t)),o={};p.forEach(function(x){o[x.type]=+x.value});return {y:o.year,m:o.month,d:o.day}}
-function fmt(t){return new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Moscow',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(t))}
-function update(){var p=mskParts(Date.now()),today=solar(p),prev=mskParts(Date.UTC(p.y,p.m-1,p.d)-86400000),yesterday=solar(prev);if(!today||!yesterday){el.textContent='Нет данных о солнце';return}var diff=Math.round(today.duration-yesterday.duration),sign=diff>0?'+':diff<0?'−':'';el.innerHTML='Рассвет '+fmt(today.rise)+' · Закат '+fmt(today.set)+'<div class="sunDiff">'+sign+Math.abs(diff)+' мин ко вчера</div>'}
 update();setInterval(update,3600000);
 })();
 </script><script>
