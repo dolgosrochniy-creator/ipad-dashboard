@@ -273,6 +273,7 @@ function forecast(city,lat,lon,zone){
  if(saved&&valid(saved.data)&&now-saved.at<86400000)draw(saved.data,true);
  function accept(d){if(!valid(d))return false;cache[city]=d;try{localStorage.setItem(key,JSON.stringify({at:Date.now(),data:d}))}catch(e){}draw(d,false);return true}
  function fetch(url,callback){var x=new XMLHttpRequest(),done=false;x.timeout=18000;x.onreadystatechange=function(){if(x.readyState!==4||done)return;done=true;if(x.status===200){try{callback(JSON.parse(x.responseText));return}catch(e){}}callback(null)};x.onerror=x.ontimeout=function(){if(!done){done=true;callback(null)}};try{x.open('GET',url,true);x.send()}catch(e){callback(null)}}
+ function fromWttr(w){if(!w||!w.weather||!w.weather.length)return null;var d={daily:{time:[],weather_code:[],temperature_2m_min:[],temperature_2m_max:[],precipitation_probability_max:[]},current:{}};var cc=w.current_condition&&w.current_condition[0];if(cc){d.current.temperature_2m=Number(cc.temp_C);d.current.weather_code=Number(cc.weatherCode)||0}w.weather.forEach(function(day){d.daily.time.push(day.date);d.daily.temperature_2m_min.push(Number(day.mintempC));d.daily.temperature_2m_max.push(Number(day.maxtempC));var h=day.hourly||[],mid=h[Math.floor(h.length/2)]||{},c=Number(mid.weatherCode)||116;d.daily.weather_code.push(c===113?0:c===116?2:c===119||c===122?3:c===143||c===248?45:c===176||c===263||c===266||c===293||c===296?61:c===299||c===302||c===305||c===308?63:c===200||c===386||c===389?95:c===179||c===227||c===230||c===323||c===326||c===329||c===332||c===335||c===338?73:3);var p=0;h.forEach(function(x){p=Math.max(p,Number(x.chanceofrain)||0,Number(x.chanceofsnow)||0)});d.daily.precipitation_probability_max.push(p)});return d}
  function fail(){if(!saved&&!cache[city]&&shade.classList.contains('show'))body.innerHTML='<h2>'+city+'</h2><p>Прогноз временно недоступен · повторите позже</p>'}
  if(city==='Москва'){
   fetch('weather_events.json?v='+now,function(d){
@@ -290,7 +291,9 @@ function forecast(city,lat,lon,zone){
    if(valid(local)){accept(local);return}
    fetch(url+'&t='+now,function(d){
     if(accept(d))return;
-    fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone='+encodeURIComponent(zone)+'&forecast_days=7&t='+Date.now(),function(d2){if(!accept(d2))fail()});
+    fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone='+encodeURIComponent(zone)+'&forecast_days=7&t='+Date.now(),function(d2){if(accept(d2))return;
+     fetch('https://wttr.in/Beijing?format=j1&lang=en&t='+Date.now(),function(w){if(!accept(fromWttr(w)))fail()});
+    });
    });
   });
  }
