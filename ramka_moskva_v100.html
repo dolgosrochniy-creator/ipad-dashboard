@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-06-remote-v17">>>><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
+<!doctype html><html lang="ru"><head><meta name="frame-build" content="2026-11-06-remote-v18">>>><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>Рамка — Москва</title><style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020813;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif}
 #day{display:block;position:fixed;inset:0;width:100%;height:100%;border:0;background:#091525}
 #night{display:none;position:fixed;inset:0;width:100%;height:100%;overflow:hidden;color:#aebacc;background:linear-gradient(180deg,#152b42 0%,#182e44 35%,#172638 60%,#081321 100%)}
@@ -22,7 +22,11 @@
 #frameClock{position:absolute;top:3vh;left:3vw;z-index:3;font-size:clamp(46px,8vw,105px);font-weight:300;text-shadow:0 2px 14px #000;letter-spacing:-.045em}
 #frameDate{position:absolute;top:calc(3vh + clamp(46px,8vw,105px));left:3.4vw;z-index:3;font-size:clamp(13px,1.7vw,22px);text-shadow:0 2px 8px #000}
 #frameActions{opacity:0;pointer-events:none;transition:opacity .25s ease;position:absolute;bottom:16px;right:16px;z-index:3;display:flex;gap:8px}
-#frameShow.controlsVisible #frameActions{opacity:1;pointer-events:auto}#frameAudit,#frameExport,#frameCount{display:none!important}#frameActions button,#frameEmpty button{background:rgba(8,22,39,.8);border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:12px;padding:11px 15px;font-size:15px}
+#frameShow.controlsVisible #frameActions{opacity:1;pointer-events:auto}
+/* Keep photo controls clear of the fixed Modes button. */
+#frameShow #frameActions{right:150px;max-width:calc(100% - 165px);flex-wrap:wrap;justify-content:flex-end}
+#frameShow #frameActions button{white-space:nowrap}
+#frameAudit,#frameExport,#frameCount{display:none!important}#frameActions button,#frameEmpty button{background:rgba(8,22,39,.8);border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:12px;padding:11px 15px;font-size:15px}
 #frameEmpty{display:none;position:absolute;inset:0;z-index:3;align-items:center;justify-content:center;flex-direction:column;gap:12px;text-align:center;padding:24px;background:radial-gradient(ellipse at 40% 35%,#345979,#0a1d32)}
 #frameEmpty.visible{display:flex}
 #frameFile{display:none}#photoImportStatus{display:none;position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:11000;background:rgba(5,19,34,.96);border:1px solid #83b3c9;color:white;border-radius:14px;padding:14px 18px;font:16px Arial,sans-serif;text-align:center;min-width:250px;max-width:90vw}#photoImportStatus.visible{display:block}#photoImportProgress{height:7px;background:#35485c;border-radius:8px;margin-top:10px;overflow:hidden}#photoImportBar{height:100%;width:0%;background:#78b7d8;transition:width .15s}
@@ -533,14 +537,22 @@ body.dashboardButtonsVisible #testModeButton{display:block!important;z-index:120
  };
  dim();setInterval(dim,60000);
 })();
-</script><script id="frame-update-info-v10">
+</script><script id="frame-update-info-v18">
 (function(){
  var f=document.getElementById('frameShow'),btn=document.getElementById('frameUpdateInfo');if(!f||!btn)return;
- var msg=document.createElement('div');msg.id='frameUpdateMessage';
- msg.textContent='Обновление выполнено 05.11.2026';
- f.appendChild(msg);
+ var version=(document.querySelector('meta[name="frame-build"]')||{}).content||'';
+ var key='ramka_last_loaded_build_v18',stampKey='ramka_last_build_time_v18';
+ var now=Date.now(),savedVersion='',stamp=0;
+ try{savedVersion=localStorage.getItem(key)||'';stamp=Number(localStorage.getItem(stampKey))||0}catch(e){}
+ if(savedVersion!==version||!stamp){
+  stamp=now;
+  try{localStorage.setItem(key,version);localStorage.setItem(stampKey,String(stamp))}catch(e){}
+ }
+ var msg=document.createElement('div');msg.id='frameUpdateMessage';f.appendChild(msg);
  var timeout=null;
  btn.addEventListener('click',function(){
+  var date=new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Moscow',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(stamp));
+  msg.textContent='Версия загружена '+date+' (МСК)';
   msg.classList.add('visible');clearTimeout(timeout);
   timeout=setTimeout(function(){msg.classList.remove('visible')},6000);
  });
