@@ -134,46 +134,48 @@ function rub(n){return Number(n).toFixed(2).replace('.',',')}
 function usd(n){return '$'+Number(n).toLocaleString('en-US',{maximumFractionDigits:n<1?4:2})}
 function updateFX(){
  var rows=el('fxRows'),status=el('fxStatus');
- var base='https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@';
+ var primary='https://latest.currency-api.pages.dev/v1/currencies/usd.json';
+ var secondary='https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json';
  function rates(data){return data&&data.usd&&data.usd.rub>0&&data.usd.eur>0&&data.usd.cny>0?data.usd:null}
- function render(cur,old,curDate,oldDate){
+ function ageDays(date){var d=Date.parse(date+'T12:00:00Z');return isFinite(d)?Math.floor((Date.now()-d)/86400000):999}
+ function render(cur,old,curDate,oldDate,source){
   rows.innerHTML='';
-  var items=[['USD / RUB',cur.rub,old&&old.rub],['EUR / RUB',cur.rub/cur.eur,old&&old.rub/old.eur],['CNY / RUB',cur.rub/cur.cny,old&&old.rub/old.cny]];
-  items.forEach(function(item){
+  [['USD / RUB',cur.rub,old&&old.rub],['EUR / RUB',cur.rub/cur.eur,old&&old.rub/old.eur],['CNY / RUB',cur.rub/cur.cny,old&&old.rub/old.cny]].forEach(function(item){
    var delta=typeof item[2]==='number'&&item[2]>0?(item[1]/item[2]-1)*100:null;
    rows.appendChild(marketLine(item[0],rub(item[1]),item[1],delta));
   });
-  status.textContent=old?'Валюты: '+curDate+' к '+oldDate+' · дневные курсы':'Валюты: '+curDate+' · сравнение с прошлым днём недоступно';
+  status.textContent='Валюты: '+curDate+(old?' к '+oldDate:'')+' · '+source;
  }
+ function get(url,callback){request(url+(url.indexOf('?')<0?'?':'&')+'t='+Date.now(),callback)}
  function fallback(){
-  request('https://open.er-api.com/v6/latest/USD',function(data){
-   rows.innerHTML='';
-   if(data&&data.rates&&data.rates.RUB&&data.rates.EUR&&data.rates.CNY){
-    var r=data.rates;
-    rows.appendChild(line('USD / RUB',rub(r.RUB)));
-    rows.appendChild(line('EUR / RUB',rub(r.RUB/r.EUR)));
-    rows.appendChild(line('CNY / RUB',rub(r.RUB/r.CNY)));
-    status.textContent='Резервный курс · сравнение с предыдущим днём недоступно';
-   }else{['USD / RUB','EUR / RUB','CNY / RUB'].forEach(function(n){rows.appendChild(line(n,'—'))});status.textContent='Курсы временно недоступны'}
-  })
+  get('https://open.er-api.com/v6/latest/USD',function(d){
+   if(d&&d.rates&&d.rates.RUB>0&&d.rates.EUR>0&&d.rates.CNY>0){
+    var r=d.rates;
+    render({rub:r.RUB,eur:r.EUR,cny:r.CNY},null,(d.time_last_update_utc||'').slice(0,16)||'дата неизвестна','', 'резервный источник');
+   }else{rows.innerHTML='';['USD / RUB','EUR / RUB','CNY / RUB'].forEach(function(n){rows.appendChild(line(n,'—'))});status.textContent='Валюты: свежие данные временно недоступны'}
+  });
  }
- request(base+'latest/v1/currencies/usd.json',function(data){
-  var current=rates(data);if(!current){fallback();return}
-  var date=data.date||new Date().toISOString().slice(0,10);
-  render(current,null,date,'');
+ function use(data,source){
+  var cur=rates(data),date=data&&data.date;
+  if(!cur||!date||ageDays(date)>3||ageDays(date)<-1)return false;
+  render(cur,null,date,'',source+' · дневные курсы');
   var day=new Date(date+'T12:00:00Z'),attempts=0;
   function previous(){
-   if(attempts++>=8){status.textContent='Валюты: '+date+' · исторические курсы недоступны';return}
+   if(attempts++>=5)return;
    day.setUTCDate(day.getUTCDate()-1);
    if(day.getUTCDay()===0||day.getUTCDay()===6){previous();return}
    var prior=day.toISOString().slice(0,10);
-   request(base+prior+'/v1/currencies/usd.json',function(history){
-    var old=rates(history);
-    if(old)render(current,old,date,history.date||prior);
+   get('https://'+prior+'.currency-api.pages.dev/v1/currencies/usd.json',function(h){
+    var old=rates(h);
+    if(old)render(cur,old,date,h.date||prior,source+' · дневные курсы');
     else previous();
    });
   }
-  previous();
+  previous();return true;
+ }
+ get(primary,function(d){
+  if(use(d,'Currency API'))return;
+  get(secondary,function(d2){if(!use(d2,'Currency API'))fallback()});
  });
 }
 function updateStock(){
