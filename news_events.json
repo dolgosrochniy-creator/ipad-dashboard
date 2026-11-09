@@ -1,10 +1,22 @@
 {
-  "updated": "2026-11-09T20:43:46.117421+00:00",
+  "updated": "2026-11-09T21:41:09.173013+00:00",
   "items": [
     {
       "title": "Что Лавров рассказал о предстоящих переговорах в Абу-Даби - Ведомости",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcERCNUVadmViWGxZUEg5dW9UTUdncGNONTViUUpTV3p6RmVWeDBMVmk1VHdVUUg0aDE5b0JyX0hpbWhJVW5EMFVrY2VDRHpCUEYybndXaDhwMmZ1VVJyaWNMUHNkYmRoOFJNMGtJWWtETDFfTVBnTUxVNG85UkR6UGl1VFBoN2VQdXlN?oc=5",
       "source": "Ведомости",
+      "category": "Россия"
+    },
+    {
+      "title": "Франция нашла виноватого в атаках на их холодильники - URA.RU",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9scmJFTEVIQWVlLUgwWXhzVVZJcHV4c053cGZtcjNZd1RVaUliVHd2RExlNWpZVkMwZ1lEbUxiNUs0c1BWV0Fz?oc=5",
+      "source": "URA.RU",
+      "category": "Мир"
+    },
+    {
+      "title": "Устроивший стрельбу в Кракове скончался от ран в больнице - Интерфакс",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9XYi1hekF2Vk1RY3N6cTNaOXVhZVVuVDRQQXc3YkpuTzhkLW04Q1JmRExPMUVjdHpfWTROeW1ibFViQWRTVUs0bjE5NV9Td9IBS0FVX3lxTFBpNnV0Z2x3UmJCaEotM3RZUGI3eF9xa2Q4OGFYWFRVSTQ3RUo2VVRjTHVFTTQ3TVBpcWFCS3VWNEM3Tmxjd1lvSXZ4TQ?oc=5",
+      "source": "Интерфакс",
       "category": "Россия"
     },
     {
@@ -20,18 +32,6 @@
       "category": "Россия"
     },
     {
-      "title": "Измена на экспорт: глава Nvidia сознался в романе с предпринимательницей, которую СМИ называют китайской шпионкой - BFM.ru",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBtTVpveDlzVmp6ZmFPVjdiYTdXemJqaldmV19xWTljN2JUMTI0MVBwTDVQOGxsTl85UnM4S2d4ZnF0eVNt?oc=5",
-      "source": "BFM.ru",
-      "category": "Мир"
-    },
-    {
-      "title": "Устроивший стрельбу в Кракове скончался от ран в больнице - Интерфакс",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9XYi1hekF2Vk1RY3N6cTNaOXVhZVVuVDRQQXc3YkpuTzhkLW04Q1JmRExPMUVjdHpfWTROeW1ibFViQWRTVUs0bjE5NV9Td9IBS0FVX3lxTFBpNnV0Z2x3UmJCaEotM3RZUGI3eF9xa2Q4OGFYWFRVSTQ3RUo2VVRjTHVFTTQ3TVBpcWFCS3VWNEM3Tmxjd1lvSXZ4TQ?oc=5",
-      "source": "Интерфакс",
-      "category": "Россия"
-    },
-    {
       "title": "FT: Мерц пригрозил заблокировать бюджет ЕС – он требует от стран финансировать Украину - БИЗНЕС Online — Новости Казани",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBnVHRtVTRlLTVlZExhU0hkaWItLUFpOE9FemFLckI0alh6NDdjTG9sTzNiQ3RSaXdIRFk3UFNQX2FJX2JCWXdrWXMwekI0ZTFUbDhKQQ?oc=5",
       "source": "БИЗНЕС Online — Новости Казани",
@@ -44,9 +44,9 @@
       "category": "Россия"
     },
     {
-      "title": "Пашинян пропустит саммит с участием Путина ради визита в страну НАТО - Lenta News",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQmlSWUNoSTJoVGdUTS1iOEQxSGdwdllFSmpDY1NJRHZLbFp2ajdCTVNqRzZiMjY3bnZVOU5MWVgtMU12ZnptZG8xMzZWMFdPUkYxQXI3Nng2Z1huT3I3OTk0WWJOTjZrRHpXdVFzUjNoTl9hcmlUOUpFdGJiOWFSaXdrcWVaSUJZN0lsQnZ4OC1HQVFBT29PRmVxUGJ2blUyZ3FWeWRGSFdmaUXSAbABQVVfeXFMT2l4TEg5NDdrMVdoZzloNHhkWFVqVVQxb2RIQ1hCckt4MnprRlR0Tmh1Y2VqakI2WW9ka01tLWVUZ3BmNmFWYUJKekpuLWZyX19hNk8wOXBmM3YyQkdyNVFPaHh4WF9vQnBfeU1KQ092bnpROW9mYXpKNkhfQndzUUF0S2FYeEQtOUlJdUFTRWthVGc1T3Q1aGJPVEpQMFhsakszcGN3R1BDLWJ5dTZJaWk?oc=5",
-      "source": "Lenta News",
+      "title": "Президент Израиля поручил сформировать правительство лидеру «Яшар» Гади Айзенкоту — сопернику действующего премьера Беньямина Нетаниягу - Meduza",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbnNFN2RwSi1xbnZ1eF9JcmtLRFlXaXZTYW9oMS1qeXNsZmRJdjhNblR3bEt0VGd4M2JuOXpOQXdxaHpVMEN6VFdvNTJxTkx4cFR5ak1JZkh1ZjZNNE1Rb204M2pBSGhPYkhpUGVPenFVbzI0N2x0MlpNelJfTWRvNUh1ZTlJbGRESGZUcDZaR0FYQk9DcGJWUWcxQVJWTFpaUlNJTUx4Q01PUC1OVHZVWU5uYnFLSWFIcEFaM3JhSjRJNXRkSE9uR1lkSGdybmNkb0xJN2VwRGRKcWRqMllFUdIB5gFBVV95cUxPVHhhSUdWU3dEMUdHRDBvcm1WT0RpZHhuX294NktsV2w3aG1yOVZMOWdoOE1CQVQ3bENoSVg4WmQ5cWdvekFFYjFOaktEdktDR1FhVGVLR3VVZHJ0UXY0RVlRSkZVVU5hbkZEclRFTUFJQXFkYkZGbm1UT2RORDhJRFpTTEtyUHluZ0hyRGJQeklYQ3JBSHBfbDNVeVB0T3ZIXzZzT0dHMkllSnJsZklpSE1zeWRHVkdoMmNfNUh1ZVg2cDB3dm5lSWQ2QUVtY1EtYnY5dVhuRzN0VVZlZ0xqUXNwX0R0dw?oc=5",
+      "source": "Meduza",
       "category": "Мир"
     }
   ]
