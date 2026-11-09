@@ -1,0 +1,6 @@
+-- Draft policies for private Supabase Storage bucket frame-photos.
+-- Apply only after Supabase Auth design is finalized. Do NOT grant anonymous access.
+-- The upload client must be authenticated and paths must start with auth.uid().
+-- CREATE POLICY "owner can upload" ON storage.objects FOR INSERT TO authenticated
+-- WITH CHECK (bucket_id = 'frame-photos' AND (storage.foldername(name))[1] = (select auth.uid()::text));
+-- Receiving iPad requires a separately authorized authenticated identity; do not use service_role in a public web page.
