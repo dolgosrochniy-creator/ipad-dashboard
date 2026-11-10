@@ -1,10 +1,22 @@
 {
-  "updated": "2026-11-10T17:40:08.269303+00:00",
+  "updated": "2026-11-10T18:39:04.977391+00:00",
   "items": [
     {
       "title": "Итоги первого дня трехсторонних переговоров России, США и Украины в Абу-Даби - Ведомости",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQLUZFZkQwWTBoVUVqQl91MEdUWG96Um5PRVlaRTN3ZjhVUWRJaWtmRG5qZkZHTW5UOHVFMlFEQnF0MnJLcHRIMlVwX1VzQTNiajZ1ZDBGd1MteTdPTklNMzV2ZXlWa1Z3WHVpVEdYRzRHM2tHRktORE1yWTJIMlFsV1h1NTdKUQ?oc=5",
       "source": "Ведомости",
+      "category": "Россия"
+    },
+    {
+      "title": "В Варне на фоне протестов проходит визит Урсулы фон дер Ляйен: жители Болгарии освистали главу еврокомиссии и потребовали покинуть страну - RTVI",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPblRfUE95UHloY2xSbXIzVGVVdFB2YlhZY0Y4UXhrRVIwc0Z0N2dxRXF0UGZCbG1DTXY5RWxFUDQzY1g4M3QyWm1KU1RMMWxWNzZpTWVOY1I3djZIVlhXNW9ZLVFIT2UwTEh0NmdnbG5FQjBiU0pEdUtvZ1ZOdVQzTHk5dkdDRFdWZTJaVGlRVEpFMmtidGo3NVNxdmh5RnpfY3dTSndJVU1MZXYyREJCdEsyRHZaT3FEemhDX3dqbll5WWcwQWZMUVU2U2NVU19FX2lNXzJxQlFOaURKTDdtZTgtYmhvMnVkbUFIWkR5NUJiQQ?oc=5",
+      "source": "RTVI",
+      "category": "Мир"
+    },
+    {
+      "title": "«Яндекс» восстановил доступ к 97% данных в Yandex Cloud — остальное вернуть не - VC.ru",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYm43Q0E4Ulc1ckVLcUVaZklVRVRHSFEyY0lNQmczWnA0VVNIczZGNm04UWt3ZURjNzF4cEIzbjBIRmliWmpMdDhUa0x5QzRfQUJfUWJONGRlbmFNVzF3ZTJsRFozcldiTm9YQlJ1NER1QkZIQ2xtNzkxM1NqU1NkZWszcXRRRXVX?oc=5",
+      "source": "VC.ru",
       "category": "Россия"
     },
     {
@@ -17,18 +29,6 @@
       "title": "Банк России понизил курс доллара - Lenta News",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5laVlfcUFmQVMweFg0d2hJRG1PS2tNX0xLcHlPNFcyVjBza3VaT0JiYmhHeHdkLUpXRWZQR3NJa0xGMG1UTjh4Tnp2ZzZNc0pGb3puWjg0c053U1pUdUNVQzNWMjQ2ZjRfQ2N4Zmo2ZWRKUElmdFQw0gF8QVVfeXFMTzBDbUh6NmRRSWlsUUJsdEFzNmpXeWxqcDZvaUFDaUdBQkt4cUxuLTZZRGdSUjFlZS1UMkF5cDZITHRiWDVqNVplUDNFZG8xVl94TmZJc25sQzBIYjBGXzFBX3ZMUF9NSDd0elhQWlJpalhla1NDeTRKWmVMcg?oc=5",
       "source": "Lenta News",
-      "category": "Россия"
-    },
-    {
-      "title": "В Варне на фоне протестов проходит визит Урсулы фон дер Ляйен: жители Болгарии освистали главу еврокомиссии и потребовали покинуть страну - RTVI",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPblRfUE95UHloY2xSbXIzVGVVdFB2YlhZY0Y4UXhrRVIwc0Z0N2dxRXF0UGZCbG1DTXY5RWxFUDQzY1g4M3QyWm1KU1RMMWxWNzZpTWVOY1I3djZIVlhXNW9ZLVFIT2UwTEh0NmdnbG5FQjBiU0pEdUtvZ1ZOdVQzTHk5dkdDRFdWZTJaVGlRVEpFMmtidGo3NVNxdmh5RnpfY3dTSndJVU1MZXYyREJCdEsyRHZaT3FEemhDX3dqbll5WWcwQWZMUVU2U2NVU19FX2lNXzJxQlFOaURKTDdtZTgtYmhvMnVkbUFIWkR5NUJiQQ?oc=5",
-      "source": "RTVI",
-      "category": "Мир"
-    },
-    {
-      "title": "Мирошник: Мерц рассчитывает получать «откаты» от Киева после своей отставки - EADaily",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUW1pelhhVl9lanRuNFlCQlk2ZHhHY3hnRW5kOXBtSncybEJuWlUzeURYbm1GWHlteEF4VWtucFpoQVdpeEE2UU1VVklpWXR1R0M5OUdoZlc2blQtWFQ4c1d0dkc2TlNZR19PMTd5WGota3gwd2ZhLTlSazRJUnhuODcxM1BlT2MyaUR0c3FROTY5SnMwaE93cUhPcExDZ1JMcmZzNFN5U1ZRdlBVTHFUWW00akRBN2Et0gG8AUFVX3lxTFBxdWNTcUNISDVDUUlWaU9yWUpVRkNSZ3FmMXBaekhxdk5xVU5Od2Y5SlQ4V1l4UzR5WFpDS1BXSWdfaTk2VGc0MnZIR01JMVlOVmVoRllyOG55VU9fSGc2Q3lHOXk0ejBDQzJibDF1ZDhnS1NvamNLMDBJcEZRbnphLV9jbVAta0lfWVFqUHVvdWpHR05VX3hKZ24ybERQajNiR19IZUE5ODRRWE9mLW10YWNXeFdWbG9EcjZ2?oc=5",
-      "source": "EADaily",
       "category": "Россия"
     },
     {
