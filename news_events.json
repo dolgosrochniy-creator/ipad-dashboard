@@ -1,10 +1,22 @@
 {
-  "updated": "2026-11-10T13:35:58.241323+00:00",
+  "updated": "2026-11-10T14:45:49.326010+00:00",
   "items": [
     {
-      "title": "В Абу-Даби начались трехсторонние переговоры России, США и Украины - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaGxFTFBJZFlkZ211WG1TWmlRcFBEQ0V0a0dhSHB0WXUxNEF6eWt4WHI0VzR5Wk0yeUFITFN6RUpKZ01pWmFCUHllUnlqazhGOXNYRC1DNkFKTnZUZ1d3dHltRm4ta3RmWkJoazVFaVpKT1Vaa0RTZDFaS0RyeUF3Sg?oc=5",
+      "title": "Первый день переговоров России, США и Украины в Абу-Даби завершен - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdHY3VnBXQ1U3VHRra0h2VHZ0dlM1bHpXa0VaOXVtbUhYaHc1TXc5WHlSeXBpOUVuaDdWYmlsRktLWGd3MzhKTUk0aE9qNkY0MWFQSm5xb1BsVzF4c2hjUEpDVUpVMzJtcWc2cDFFMmQybFFOa1lDTW5xSVN6RjQ2aGJ2U0I?oc=5",
       "source": "Ведомости",
+      "category": "Россия"
+    },
+    {
+      "title": "«Экономика должна служить человеку»: папа римский выступил против политики Хавьера Милея - RTVI",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0QjNmR05ISFlKN0V3NXdnSm1tc3IzclNUN1NDb016cGc3NDFtd25tOVB6S3lOUkpPU2tpOEhmQmdVZThienlnanBZckFNd2VjMTdrV01jMzUyeDNIbkc4NjM2N25zTWk0Rmc?oc=5",
+      "source": "RTVI",
+      "category": "Мир"
+    },
+    {
+      "title": "Мирошник: Мерц рассчитывает получать «откаты» от Киева после своей отставки - EADaily",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUW1pelhhVl9lanRuNFlCQlk2ZHhHY3hnRW5kOXBtSncybEJuWlUzeURYbm1GWHlteEF4VWtucFpoQVdpeEE2UU1VVklpWXR1R0M5OUdoZlc2blQtWFQ4c1d0dkc2TlNZR19PMTd5WGota3gwd2ZhLTlSazRJUnhuODcxM1BlT2MyaUR0c3FROTY5SnMwaE93cUhPcExDZ1JMcmZzNFN5U1ZRdlBVTHFUWW00akRBN2Et0gG8AUFVX3lxTFBxdWNTcUNISDVDUUlWaU9yWUpVRkNSZ3FmMXBaekhxdk5xVU5Od2Y5SlQ4V1l4UzR5WFpDS1BXSWdfaTk2VGc0MnZIR01JMVlOVmVoRllyOG55VU9fSGc2Q3lHOXk0ejBDQzJibDF1ZDhnS1NvamNLMDBJcEZRbnphLV9jbVAta0lfWVFqUHVvdWpHR05VX3hKZ24ybERQajNiR19IZUE5ODRRWE9mLW10YWNXeFdWbG9EcjZ2?oc=5",
+      "source": "EADaily",
       "category": "Россия"
     },
     {
@@ -20,27 +32,15 @@
       "category": "Россия"
     },
     {
-      "title": "«Экономика должна служить человеку»: папа римский выступил против политики Хавьера Милея - RTVI",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0QjNmR05ISFlKN0V3NXdnSm1tc3IzclNUN1NDb016cGc3NDFtd25tOVB6S3lOUkpPU2tpOEhmQmdVZThienlnanBZckFNd2VjMTdrV01jMzUyeDNIbkc4NjM2N25zTWk0Rmc?oc=5",
-      "source": "RTVI",
-      "category": "Мир"
-    },
-    {
-      "title": "Обрушение моста привело к сходу вагонов в Архангельской области - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBpd05Zdm5EZXQ3R1FZYzAxd25SLVM2SEVkWEN4S3liNkZMbGxmVWhiY0RYYzZWbi12dXVSRXBFMWZBS1hSdS03UGV5czBjVVhLa2VlTkFLbWkzdFd1blVVbkF5R1pZRGg3WUJ6eHduQ2ZvTUs0TEkxenZaNUFEUQ?oc=5",
-      "source": "Ведомости",
-      "category": "Россия"
-    },
-    {
       "title": "Трамп объявил о завершении войны с Ираном и защитил главу Пентагона от импичмента - RTVI",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9jRVRDOWdXek1aTjFfSXNRa1pnWVdqUXY3YTM4Y1I0dHRZWDdXZnhuWnhQMVdRLVhjSjQ0SHFxdTZLbEFCUTZvemVCYU1jMlEwNEc0a19CS3ByaFY3R2VRMnVVOERlYmNmNnN3bVNvaw?oc=5",
       "source": "RTVI",
       "category": "Мир"
     },
     {
-      "title": "Что будет, если переговорщики вернутся из Абу-Даби с пустыми руками - Финам",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZ2hydVhrUFBBai1NTFk3Y1JIVmplMWpmc1N4LTVCRVMxVC1hNTBaTUwyLUpLRDhPOHIxZGdwSzJLa0E3V0dWcEVoSzJWUnNZUVhNWDg4dXFYMkU0ZlgyVGw5VUFseGpGbmFRNHNZXzRpU21ySVdYa0ZaUzlrS1FKTUl1Tm9DSkwteWVWeVVSVi1ZS3F0RThlVmVocFlaYjBvX3NISnF4ejhtbWFpNndTTTRTZG1PckFfMFRTYTh5Mjc2RTN6dmRzZzBEVWhQamc4c3lXZFZsaklvclJ1bVFFTU1CYW9Za3R4OXpMdEln?oc=5",
-      "source": "Финам",
+      "title": "Вагоны грузового поезда сошли с рельсов из-за обрушения пролета моста в Поморье - Интерфакс",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE56Tmt4Q3VhNlhGeXB2ZUlXNWYzMHN2ZDB2bEJBWHpNMEFPT1FJdTA4M184QldlT0haOFE2ajFVUWt5cW9DeWlKdXl1WXV0X2_SAUtBVV95cUxQLXJmVUM3RXo3S3RSYnMzeWg3Z0JQb1gyUUhDZVBHNVJKTk5hMEZaQVdvM0sxUjdQYTNRQWt5LWFNVXdjM1hueHFrdE0?oc=5",
+      "source": "Интерфакс",
       "category": "Россия"
     },
     {
