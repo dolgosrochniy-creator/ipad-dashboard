@@ -1,10 +1,22 @@
 {
-  "updated": "2026-11-12T16:52:36.292417+00:00",
+  "updated": "2026-11-12T18:43:06.182292+00:00",
   "items": [
     {
       "title": "Главное из заявлений Путина на встрече со спецпосланниками Трампа - Ведомости",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTjczNENveTRBbWRTVnZOenphUkdRX3RodTh3eFlEZDNGUGczNko3a3NCSGQ1X0Q4R01ZNW94bGpqZ0I4dHFOTTFsMzUxTkxhdm9XejJIRS11ZjFwVmJLWXVObGhHVjhwRE1CY2xYeGlSQVVPcHNRcU14LWJCRHBkX3JIb1djRWhNaVF6ZEtsZ19Bc1dj?oc=5",
       "source": "Ведомости",
+      "category": "Россия"
+    },
+    {
+      "title": "Трамп объявил, что США больше не нужна сделка с Ираном - Интерфакс",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1scnpmN2JCbXF4UVNzTWJscWx6VkloOXhwcTRTVklqTGd5d210eGZMeDJ6WXBlVUE1ODBaZms4SDlXcjFiWGpOSi1zSnNwZ9IBS0FVX3lxTE9IZmZOQ2tIczRUNWttZ0llN0lLR1JoM3VCbmJXOUM3RFI2SEZ3TWc4bUE0ajRuSHN6MnJyMFREZnJUcDlOSkY2TlRaUQ?oc=5",
+      "source": "Интерфакс",
+      "category": "Мир"
+    },
+    {
+      "title": "Симонов: «Своими заявлениями Путин вернул оптимистов с небес на землю» - BFM.ru",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5lTS1RZ29GU1RMR3lPN25xQktPOUw4dUY4OF9teTJ0eEl0b3pFQVhKWnJPcVh5TmdNOWlzYmtFaWlhOU1O0gFKQVVfeXFMT1BpaWYwYUJSUUdmVmktU3BmUVZIUTJzalRjMXBTSGYtbUVmNnVLdHpnTUVIYndaMTEyMmJMMk9walkzVk11YUQ1UFE?oc=5",
+      "source": "BFM.ru",
       "category": "Россия"
     },
     {
@@ -14,9 +26,9 @@
       "category": "Мир"
     },
     {
-      "title": "Что правительство предложило доработать в налоговом законопроекте - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUWw0VFlnOGxTcFR3cFhwU0NwclM3b1EwWVdwVG5SUGhOa3U5czVhc09KWFp4WjlBLTBpMXRESGhoek0wS3d5WmowWjF1NnlLQ2J4M0ZGZmpfV2xETVozQ2tyRHJzSEV4WEVodkVsR0hjblJBNE1EZXItQy02bjhuczhTM1ZEMzJBUjUwXw?oc=5",
-      "source": "Ведомости",
+      "title": "Родился в Пскове. Кого ищут за взрыв машины с полковником в Петербурге - 47 новостей из Ленинградской области",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4xQzVRbFQ1SjhtZTBjc21UN2duYWZhVEcyeU1qVVFKazVGOGk4YlhnRFlLRHk0Nmd6SnBEX2xGX0pXajlmUUhtYnJn?oc=5",
+      "source": "47 новостей из Ленинградской области",
       "category": "Россия"
     },
     {
@@ -26,27 +38,15 @@
       "category": "Мир"
     },
     {
-      "title": "Заявление Путина о линии разграничения с Украиной оценили: Политика: Россия - https://lenta.news/",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRmdWcW5RRUI5Z2xhTnRpMmNYaXJkNzhlMkxseDhtWlgybHNyM2NqclRmTUNzNWtudjZ5V1V6S1htTDVhS3U5U1I3VHdHdEQ1TWhtSHFUNG9Dcm5CcDdUZ2FKejQzOXZlSFNrYlloQmwtZUtoWGhmWmMxVVVWX2JNenJkNnMxTFVqVUt2UG02R3NQbUw1UU5wamFoazU1UQ?oc=5",
-      "source": "https://lenta.news/",
+      "title": "Каллас заявила, что объехать ее на переговорах с Россией не получится - EADaily",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUHpnYnpfeGRCQVAteVZRdVd0cmlMbkVoN2JHbkg5MjhHNldVZ1NLVmRULUZxMUVZSzVpUTI2a0RNbFFuLXJIUmpSYjRldTVPUXU5ZUlXUzh0OW8wLU5LbFhfVlZGSHlLR2gyWXBXOW94dkd4ZTVjRmhLWVdxYTJqdUlwaUpnN3lrSXpLbVp4UmtiZC1qV3AwUjZtbDM1YXp2V2VVV19wYS13ZTk5bXfSAbIBQVVfeXFMTVNwbDdjVXRTcEpMY0NoS0l5eGhTM3hZSWEtU2NoV3E3NW1rMmVDZ1JnYzc2NlE5MlVuaE96NkdZY3VWRTk5ejJaaENkMlBJTWJhcWYzcEZ0Rm1CZUpTdDZHNmhUUU9wNUJWQ2VVbUl0WWJkUlFyd3V2X3hKZTA5M1lKQ1JlaVhLQUhleDdya1llRXJBdzNXX1RBRzZCeEY3NnVTZG5kMUdzOF9meHE0VG5iQQ?oc=5",
+      "source": "EADaily",
       "category": "Россия"
     },
     {
       "title": "Нефть подскочила на заявлениях Трампа - ProFinance",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMElZMnhCOTZFS09CeUJyOTBKTzV0b3hxcWJMX2ZzeXMzOXZUUHJxek9NSGRiLXd4REZ2UGUzU3RROGRqMWNacEwxV2JBbXVhU1g2RXAwT0p4OFZxR0ZZUzJuYmpVVEdoU280MGpRYXF4QW9zbUhlTEFDZ2FtMUZYR01maFpEam1BOU9HRFVOdzBKeHFR?oc=5",
       "source": "ProFinance",
-      "category": "Мир"
-    },
-    {
-      "title": "Родился в Пскове. Кого ищут за взрыв машины с полковником в Петербурге - 47 новостей из Ленинградской области",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4xQzVRbFQ1SjhtZTBjc21UN2duYWZhVEcyeU1qVVFKazVGOGk4YlhnRFlLRHk0Nmd6SnBEX2xGX0pXajlmUUhtYnJn?oc=5",
-      "source": "47 новостей из Ленинградской области",
-      "category": "Россия"
-    },
-    {
-      "title": "Фото. Против «рентного капитализма»: как жилищный кризис вывел Испанию на улицы - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbXlIUDhHcUx3Z20yOERfMlM3V09Fbm82NWZTRUt5czI3bkZnZ1dTU1VGbHEwcEZhOHBLcFgwQlJVTnMzVTBySy1ZMGx0dlM4QURlS1Rqd0hQSV9aODJlSG9IWEZPZy1tVWhMZDh1R1AtRWdfQmlmYWh2TFJPR0VORlNfbGFGS0c4bTVR?oc=5",
-      "source": "Ведомости",
       "category": "Мир"
     }
   ]
