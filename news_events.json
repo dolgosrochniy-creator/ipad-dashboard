@@ -1,22 +1,10 @@
 {
-  "updated": "2026-11-12T15:51:27.390893+00:00",
+  "updated": "2026-11-12T16:52:36.292417+00:00",
   "items": [
     {
-      "title": "Путин в четверг встретится в Москве с Уиткоффом и Кушнером - Интерфакс",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1MM09Yb1RqR3diYWRwWFpFcmd5LUs2eFEwREJENzQtWFFGaGxjbFNISm1IbFlEQ2FzUjA2TkRoWDBBQnZtd0U3dHFScERYc0HSAUtBVV95cUxPck82NXc3NzlQc21kQ3BVelc0U0kxbnBUQ1JNNC05Ri1iWWMwRzdZTzBNYlRTOGFDX1dWNUtXTkFQTzFnN25tekRSeFk?oc=5",
-      "source": "Интерфакс",
-      "category": "Россия"
-    },
-    {
-      "title": "Дуров* не стал молчать о скандале с китайской шпионкой и главой Nvidia - URA.RU",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE95bHNGemRMWllWU1BpNW1MVWhWM1Q5eUUzTjlCUHd3NkFWZWJ6QV9CdUFGS2t4NnA3WGVYMUZKRnlFZnZ3cU9r?oc=5",
-      "source": "URA.RU",
-      "category": "Мир"
-    },
-    {
-      "title": "Родился в Пскове. Кого ищут за взрыв машины с полковником в Петербурге - 47 новостей из Ленинградской области",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4xQzVRbFQ1SjhtZTBjc21UN2duYWZhVEcyeU1qVVFKazVGOGk4YlhnRFlLRHk0Nmd6SnBEX2xGX0pXajlmUUhtYnJn?oc=5",
-      "source": "47 новостей из Ленинградской области",
+      "title": "Главное из заявлений Путина на встрече со спецпосланниками Трампа - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTjczNENveTRBbWRTVnZOenphUkdRX3RodTh3eFlEZDNGUGczNko3a3NCSGQ1X0Q4R01ZNW94bGpqZ0I4dHFOTTFsMzUxTkxhdm9XejJIRS11ZjFwVmJLWXVObGhHVjhwRE1CY2xYeGlSQVVPcHNRcU14LWJCRHBkX3JIb1djRWhNaVF6ZEtsZ19Bc1dj?oc=5",
+      "source": "Ведомости",
       "category": "Россия"
     },
     {
@@ -26,27 +14,39 @@
       "category": "Мир"
     },
     {
-      "title": "Минобороны: российские военные поразили склад боеприпасов в Киевской области - EADaily",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRFFORmN0UURXZlpadXpfSmE1Y01jbWJHZzczUmF6bmNxWVVwaGhLRzZ6SEpHdng4WUpDcDRiU25KbXZueGEwdWhfMkdJRzRjdERlTDV0b2E3d3RVbnB3dFAzY0VnSkthckcwV3NFRUhOSGJKUDBtRVFHdWwyd0t4bU9tTTMyb1daRjRRa3VCSGZuUFE5SWtiSUZBRGhjWlBpWWpFc3JHYUdQcnFlTUI4VU0zQ07SAbgBQVVfeXFMTUNkcWVXS0pkbmlOZERET3FpbzRVNWtSdjZtUnQwZGI3ZXVhUjJTWGhwT1B3T1lGRTVLNXAxcmt5aEFfNXBtVDc2VUVZYWU1dFJ6RmJWTmNoQXlUaDZES2RfYi1yejB6U25QY3oyNndNalpnamlwam41RlFROVRVcUtIdmxUYmNtY3ZkQXlaT0ZmdzBCSjNOcldWTTdlVWx2WDBBVy1oeDBqVXNGZWx6b3pUbS1WUUxCRw?oc=5",
-      "source": "EADaily",
+      "title": "Что правительство предложило доработать в налоговом законопроекте - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUWw0VFlnOGxTcFR3cFhwU0NwclM3b1EwWVdwVG5SUGhOa3U5czVhc09KWFp4WjlBLTBpMXRESGhoek0wS3d5WmowWjF1NnlLQ2J4M0ZGZmpfV2xETVozQ2tyRHJzSEV4WEVodkVsR0hjblJBNE1EZXItQy02bjhuczhTM1ZEMzJBUjUwXw?oc=5",
+      "source": "Ведомости",
       "category": "Россия"
     },
     {
-      "title": "Фото. Против «рентного капитализма»: как жилищный кризис вывел Испанию на улицы - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbXlIUDhHcUx3Z20yOERfMlM3V09Fbm82NWZTRUt5czI3bkZnZ1dTU1VGbHEwcEZhOHBLcFgwQlJVTnMzVTBySy1ZMGx0dlM4QURlS1Rqd0hQSV9aODJlSG9IWEZPZy1tVWhMZDh1R1AtRWdfQmlmYWh2TFJPR0VORlNfbGFGS0c4bTVR?oc=5",
-      "source": "Ведомости",
+      "title": "Маск выступил в поддержку гендиректора Nvidia - EADaily",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdUpkRDlFVWxfM0dGaF9OQlZUYUdqQXhKb1VhOW1vQlphcHZ5cmxFX1ZWemNkTUtmYW5vSDl4dDVCUGNKeEFwYng4d3gtVkM0R2JsbWFYb0Q3emdDSzBPVUVwWXo1MkYzQ0ptclJOVXQ5dzVidWF5Nm4zaHVURG1ZeWtwNTdDNkp5Um0tVEZNOXc4MUXSAZcBQVVfeXFMT1BMUDBhQUZ3aWFMNkFhT0dPbEJyOGsxLXlmTExsOXNkUTZjSFNNWGZLcWRXNXI0RUNYUHJqTzhac05LSTR5XzNpVnB1NEdfRmhkSlZKaWRLaENvLXNqVEtBMm5fTzFwOVJLeS1XRGM3azJPU1BhUE96azdnMkZJVWFHTWY0MzNWc0FjLVoyY1dQM0RKZjgyMA?oc=5",
+      "source": "EADaily",
       "category": "Мир"
     },
     {
-      "title": "Надо «закапываться» под землю, а не переезжать за границу — Минцифры о судьбе ЦОДов - EADaily",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZk50TlkxU21JZnNCV1J5MXhHSkJDOHdUQm83VHN0SENLY3IzZmF6QzFyYmxuOFF3VkpCWHZXaWIwQnV0T0RoSEoyeTZleFZXYklhanFqLS1xR1pGR3EwTHVlbGx3WFJJOXdqODlzOE43VlUzUFpRQlBDdXVSdkYteFVtdjBhc2pzVVQ3SlhtRVAxSktwN2FGTlBGdXBXN2xZV0x5RFJwc1VEc3pUa2lsVWp3WmFnWHdjTlZSaWVB0gHCAUFVX3lxTE5BWksxTExScDNaX3JLUzUyZlNpY2cwaEZ2SmRnZHZDbTF2aXItQ0xyUThBVDBxeGFTV3FQS1NOcXlTMHpZU3pwQm1hTXY2a2tJOGtNQ2RJTFFhMTBXWDNiNHlId2xtS1BTcEc4ZkY4T1JqNkJqekxhSXQ4Rl81UFQwbTFFQnNOUFB3cVlRUzYwT1VxRDRoQ1BYb3VacGp2a2tMWTQzaUxVU3BTQVZqV2lxWGk1bUh2eXE1Z2VZSFg0enZn?oc=5",
-      "source": "EADaily",
+      "title": "Заявление Путина о линии разграничения с Украиной оценили: Политика: Россия - https://lenta.news/",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRmdWcW5RRUI5Z2xhTnRpMmNYaXJkNzhlMkxseDhtWlgybHNyM2NqclRmTUNzNWtudjZ5V1V6S1htTDVhS3U5U1I3VHdHdEQ1TWhtSHFUNG9Dcm5CcDdUZ2FKejQzOXZlSFNrYlloQmwtZUtoWGhmWmMxVVVWX2JNenJkNnMxTFVqVUt2UG02R3NQbUw1UU5wamFoazU1UQ?oc=5",
+      "source": "https://lenta.news/",
       "category": "Россия"
     },
     {
       "title": "Нефть подскочила на заявлениях Трампа - ProFinance",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMElZMnhCOTZFS09CeUJyOTBKTzV0b3hxcWJMX2ZzeXMzOXZUUHJxek9NSGRiLXd4REZ2UGUzU3RROGRqMWNacEwxV2JBbXVhU1g2RXAwT0p4OFZxR0ZZUzJuYmpVVEdoU280MGpRYXF4QW9zbUhlTEFDZ2FtMUZYR01maFpEam1BOU9HRFVOdzBKeHFR?oc=5",
       "source": "ProFinance",
+      "category": "Мир"
+    },
+    {
+      "title": "Родился в Пскове. Кого ищут за взрыв машины с полковником в Петербурге - 47 новостей из Ленинградской области",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4xQzVRbFQ1SjhtZTBjc21UN2duYWZhVEcyeU1qVVFKazVGOGk4YlhnRFlLRHk0Nmd6SnBEX2xGX0pXajlmUUhtYnJn?oc=5",
+      "source": "47 новостей из Ленинградской области",
+      "category": "Россия"
+    },
+    {
+      "title": "Фото. Против «рентного капитализма»: как жилищный кризис вывел Испанию на улицы - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbXlIUDhHcUx3Z20yOERfMlM3V09Fbm82NWZTRUt5czI3bkZnZ1dTU1VGbHEwcEZhOHBLcFgwQlJVTnMzVTBySy1ZMGx0dlM4QURlS1Rqd0hQSV9aODJlSG9IWEZPZy1tVWhMZDh1R1AtRWdfQmlmYWh2TFJPR0VORlNfbGFGS0c4bTVR?oc=5",
+      "source": "Ведомости",
       "category": "Мир"
     }
   ]
