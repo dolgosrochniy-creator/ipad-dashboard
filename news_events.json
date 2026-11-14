@@ -1,28 +1,16 @@
 {
-  "updated": "2026-11-14T05:41:20.456334+00:00",
+  "updated": "2026-11-14T06:46:27.927078+00:00",
   "items": [
-    {
-      "title": "Все аэропорты США остановили работу - GISMETEO.Новости",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZFFac3IwVmJyMHZWaTRhc1hramsxX1B6bWFUNTVKSnIycm50YVdsWGxCd01ZWmg4dVFJVTRZX0hnVEI5VkNGLWRNUHp2Q01xUG44bTdDdi1lWEVrMDJjY0tjSU9McVk3VS1Sbm5iOG1qVlppVm1DUmtsSVQ0VFd2NA?oc=5",
-      "source": "GISMETEO.Новости",
-      "category": "Россия"
-    },
     {
       "title": "В США приостановили все вылеты из аэропортов из-за чрезвычайных обстоятельств - Ведомости",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQV0E3Y3lFeTFuLTcwWmNaWjZ2enJJZ0phWkQ3U3Z0RzY5Y3RPaUZkcjg2WXJuX1FZeTBReDVjVnhMU2dvY0M2TURXWW13S0VGQTNXTzVpbXpDR1dJcXM0Y28xdXFOdjFvN2x1Nk13OGpSSEQzeE9HbEE2aXRRMHpzMUJNd01ST3UxMHc?oc=5",
       "source": "Ведомости",
-      "category": "Мир"
-    },
-    {
-      "title": "МИД: на встрече с Уиткоффом и Кушнером не обсуждали участие Европы в переговорах - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbnNMZ1lDTjh3ckQwblFESldnd09KQ2Zpb0txZWdLelp0TEs2Z2ZsMFdqQjZjOFhUbUtyMHZCc2s3ZnI1YUhDRGxTNmJRdDhwRW4tSlpfVGxSVms2VjNoQmFCYi05dlU3NjVONXNkREx0UFJyNml4NEoxdEVkLXFLUnRiRm9LQ2tWOUwxOUdEdG8?oc=5",
-      "source": "Ведомости",
       "category": "Россия"
     },
     {
-      "title": "Танкер врезался в круизное судно в США – оно потерпело крушение - RTVI",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeE1BcnVCMU9sRlZHbVNtalVTOTktdmVWV3Q2YmZqU3RKV1k0R2dVeGlfaTN5Znljd2FQQWJpUE5OZHJSSTNYLTJMSjBsT05qMVdWOVNESVFJTWcwRDRKcUpZTXVZUnI0VnBGTHRfc1l6eTZaXzI4Mjl1UVVNVHBVX0RBVUdKZ0RLczVlMkhscVNud28?oc=5",
-      "source": "RTVI",
+      "title": "Все аэропорты США остановили работу - GISMETEO.Новости",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZFFac3IwVmJyMHZWaTRhc1hramsxX1B6bWFUNTVKSnIycm50YVdsWGxCd01ZWmg4dVFJVTRZX0hnVEI5VkNGLWRNUHp2Q01xUG44bTdDdi1lWEVrMDJjY0tjSU9McVk3VS1Sbm5iOG1qVlppVm1DUmtsSVQ0VFd2NA?oc=5",
+      "source": "GISMETEO.Новости",
       "category": "Мир"
     },
     {
@@ -32,21 +20,33 @@
       "category": "Россия"
     },
     {
+      "title": "Танкер врезался в круизное судно в США – оно потерпело крушение - RTVI",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeE1BcnVCMU9sRlZHbVNtalVTOTktdmVWV3Q2YmZqU3RKV1k0R2dVeGlfaTN5Znljd2FQQWJpUE5OZHJSSTNYLTJMSjBsT05qMVdWOVNESVFJTWcwRDRKcUpZTXVZUnI0VnBGTHRfc1l6eTZaXzI4Mjl1UVVNVHBVX0RBVUdKZ0RLczVlMkhscVNud28?oc=5",
+      "source": "RTVI",
+      "category": "Мир"
+    },
+    {
+      "title": "Зять Трампа объявил о новой договоренности России и Украины - RTVI",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRmdPb3NsQ3hCbjZTMUJJVzVpM05BTmRaeFg0RUFZTTBRZTF1UEdKTklSZGJpdFJaOE1zVTJCY0Yxdk5qQkZobzlUN1A1REVfUzJubjlCVlVKZHYwdEVTVm5BMTBLcnBIaFF1cHdTN213SXRJWmtRQnVQQUZiQjNtRDJzaWUxSjdMMXc?oc=5",
+      "source": "RTVI",
+      "category": "Россия"
+    },
+    {
       "title": "Каллас вышла из себя из-за вопросов о переговорщике ЕС по Украине - URA.RU",
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5qOUVXTEVVa1ktT0stLUZmLU05ZE5sdkFEal9memlXMkNGMDVDS1pZclhjdlNQUVhTaVlOXzNBcGxVVmJNWmRZ?oc=5",
       "source": "URA.RU",
       "category": "Мир"
     },
     {
-      "title": "Зеленский заявил о новых ограничениях Starshield и потребовал объяснений от США - DW.com",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaXkyQlEydUdOWW1lYlZSbjV3OUo5X1ljZm9VRFVfeWdoSUtLRENueC1KT0Nhcjh4RDl6OGg4RjFGSnlyZjduVXVubjh0aUN6N0tZb2diQi05Z3U5Vml4dk8zSFpEc1k2UzAtcGpYTHNZYU9jV2RtWHUzQzBCT2FPNkpVUk1CaHk1SDE0bFlxdjU1eHdqX2VJMFVnQdIBmwFBVV95cUxQNXRVbXlNU000a2FLY2xYTnJ6eGgxM1FiMm1LUnJ4V2NWYnZ2MTFIdGkwODhQQWZJN00zT1FzWHNFdXhacm9MWU5qWUhBb09IRVktMUdGOHFxZEpPRklid1dTSUFxMXNWTkVITURKTklUZ3hqQ2MtNTJ6N1FTMHlrX3lwcS1ZTExNazZkWnZYWF9wUGVlNTQza2ZRWQ?oc=5",
-      "source": "DW.com",
+      "title": "Рубль восстанавливается. Курсы доллара, евро и юаня на 14 ноября - Банки.ру",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1tdlJXTHlpQ0JfWE1uaW91WE9KSTVvQjNheG1iRFVHc0t4dzBQUVpfMzh2M0xSNnR2Zk9JV3VnWVlTcXd3OU93cGRaRmVhRzBOS1FEMUYwOA?oc=5",
+      "source": "Банки.ру",
       "category": "Россия"
     },
     {
-      "title": "В работе Microsoft произошел сбой. Он затронул 74 страны - ФОНТАНКА.ру",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9DVU5pU2pCaWJvVHY3YkNnVFFvX05GSlZzN0JNOTVIbkFmVGtscDBJbHI5OGhjOTE2blBMNXRRM1F4Q21PZ3ZaYVFTRjR3aTgtVVNTVXlaaw?oc=5",
-      "source": "ФОНТАНКА.ру",
+      "title": "Запуск Starship оказался неудачным - EADaily",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQV21KY19UV21yRmxWRDEwVnlKVlV0My12VWF5a3VCOXhibVYtMllvZEFULTdySm9KTXRuZG1YRElkelNIMmM2ZXQ4MHZvY3lza2dZVE12dnUtamRKaS1GQW40QzJQWmVyV1NiVnU3VHBKVldIQk9id1daVkd0a3FFctIBhAFBVV95cUxOcGpRUk1EeXZRLWdLVFFEczA1OUhCVFJiVDk5cWx4eFlNbWg1MzFaeUhfTHAyQnhTcUJfTVFKR2dkRE9mUGJjLV9GVDNIMlJpUk1XYV9LZk52RDJvUXFpNVNMYmc2SlJGbGhrWlZqVXFHY2k3aEloRVdvckZQWi1YRmN3Yjk?oc=5",
+      "source": "EADaily",
       "category": "Мир"
     }
   ]
