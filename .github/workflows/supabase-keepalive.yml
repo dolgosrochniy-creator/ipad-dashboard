@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
-      - name: Check Supabase REST API
+      - name: Check Supabase Auth health
         env:
           SUPABASE_URL: https://huxnfwmxfrsvgxurgpkn.supabase.co
           SUPABASE_PUBLISHABLE_KEY: sb_publishable_iCh1OvLTSrTzp1xbj7jSUg_2-lSut_w
@@ -18,6 +18,6 @@ jobs:
           set -euo pipefail
           code=$(curl --silent --show-error --location --output /dev/null --write-out '%{http_code}' --max-time 25 --retry 2 --retry-delay 5 \
             -H "apikey: $SUPABASE_PUBLISHABLE_KEY" \
-            "$SUPABASE_URL/rest/v1/")
-          echo "Supabase REST HTTP status: $code"
+            "$SUPABASE_URL/auth/v1/health")
+          echo "Supabase Auth health HTTP status: $code"
           test "$code" = "200"
