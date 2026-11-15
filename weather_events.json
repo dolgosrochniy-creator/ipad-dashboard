@@ -1,7 +1,7 @@
 {
   "latitude": 55.7817,
   "longitude": 37.570797,
-  "generationtime_ms": 0.4690885543823242,
+  "generationtime_ms": 0.8704662322998047,
   "utc_offset_seconds": 10800,
   "timezone": "Europe/Moscow",
   "timezone_abbreviation": "GMT+3",
@@ -15,12 +15,12 @@
     "wind_speed_10m": "km/h"
   },
   "current": {
-    "time": "2026-11-15T16:15",
+    "time": "2026-11-15T18:00",
     "interval": 900,
-    "temperature_2m": 3.2,
-    "apparent_temperature": -0.4,
-    "weather_code": 0,
-    "wind_speed_10m": 7.1
+    "temperature_2m": 1.8,
+    "apparent_temperature": -1.7,
+    "weather_code": 1,
+    "wind_speed_10m": 7.5
   },
   "hourly_units": {
     "time": "iso8601",
@@ -603,5 +603,5 @@
       1.9
     ]
   },
-  "updated_at": "2026-11-15T13:25:43.272225+00:00"
+  "updated_at": "2026-11-15T15:08:07.099232+00:00"
 }
