@@ -23,7 +23,8 @@ for category, url in FEEDS:
     except Exception as exc:
         print("Feed unavailable:", category, str(exc))
 if not items:
-    raise SystemExit("No news feeds available; existing file unchanged")
+    print("WARNING: All news feeds unavailable; preserving existing news_events.json. Will retry on next scheduled run.")
+    raise SystemExit(0)
 selected = []
 for index in range(6):
     for offset in (0, 1):
