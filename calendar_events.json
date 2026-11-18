@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-17T23:54:17.086591+00:00",
+  "updated": "2026-11-18T01:19:48.249744+00:00",
   "events": [
-    {
-      "title": "The Parisian Macao",
-      "start": "2026-11-15",
-      "end": "2026-11-18",
-      "is_flight": true
-    },
-    {
-      "title": "ВАЖНО: Макао → Hengqin → аэропорт Чжухая",
-      "start": "2026-11-17",
-      "end": "2026-11-18",
-      "is_flight": false
-    },
     {
       "title": "Санья — Marriott Yalong Bay",
       "start": "2026-11-17",
