@@ -1,9 +1,21 @@
 {
-  "updated": "2026-11-18T22:18:17.412431+00:00",
+  "updated": "2026-11-18T23:18:18.840669+00:00",
   "items": [
     {
       "title": "Песков рассказал «Ведомостям» о формате встречи Путина и Трампа - Ведомости",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNkt5TlZGa0JOMzgxeHB4bnY5MF9pakY0cTBjQUV4OWhLUkZpeDM1VjFjaUh1eWNyS3pxb1phZXhBZFVPVDhnMTA5c2hJODVib05aTlVKQmJpSk1lQ2dfTkJqbW5CRUZJc29iR1pKWDBtcmU2SUJVUkZEOEo5c254b3F0UGpobFE?oc=5",
+      "source": "Ведомости",
+      "category": "Россия"
+    },
+    {
+      "title": "Nvidia полностью прекратила поставки ИИ-чипов в Китай — даже разрешённых США Hopper - 3DNews",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTGJ6eDJETE95cTNjNVdEX3I2eFp6cjV5X3R2MlJrWldpdXVwaVZZQUVaSmlPa3lFblZ6a09qbXYtZUJXQ2V2c1BKRFJvRy1NTGpSdHRZRjNJeF95cmFrMjU4YlhZLTROZi1qMWFVakFTb0xYTlQ3MV9OMmxuMXdoZHRyVmtYODdEdGg0Tk1fOGxBSnBodXd4bUxvbHc2Q0J4NXVjMHRsdEkzWWxRVnE40gG0AUFVX3lxTE5RZUxRaVpXQkl6TkFUeFo2VkpvWTJ2TE1kS2lSdGlHeElSTExfMHlhY2FaM3ZpRk56YzBXSTUzZGNMd2I2eXFzdjVVRDBBRWF4Y1l1Mi1fZEZOMGg5TERlOWdnd1RkVTRfLXdDQUtyN0Y3LTJKLWxvLVFaTXhIZDZlV2ZwUExUN3VxUUtZV3BhWlp1WEFJNDlxSlVnTFEyVndPZzRLdG5IQWZsY2hlbUlBaTA2MQ?oc=5",
+      "source": "3DNews",
+      "category": "Мир"
+    },
+    {
+      "title": "Минтранс рассказал о сообщении через Крымский мост - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSXdDUC12UzZ1UHpSdzNuVExYMmxxY1VDYXdDVmgxbWRHVEh5RDllOFUtdlVCVXhDYVVUYVA1RTl0a0hKMGZTSFVTN19xWDlCM0xiTHp2ZHoyMm9PcnRQdEw0UTFHZUZXNU1yaWk3U3VZcWhfZzBWczNkQjhlUHZyY1JCVnBwTDc0ZUx2NnNuaw?oc=5",
       "source": "Ведомости",
       "category": "Россия"
     },
@@ -26,27 +38,15 @@
       "category": "Мир"
     },
     {
-      "title": "Обстановка в атакованном ВСУ российском регионе изменилась - Lenta News",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQb1BLRGlERjYzSlFVT3hGVGw1YnA1cF84UUFxbUZfS2lfQnZjNVVZMjRFQ1FqOENpWE9kVFROa24yd0YwcWVJc25WdlhGNGk2R2FuOXd1d29hMTVUOWp1OFUweVJGN3FjYlAzUjdjUWhpcG8tMWpTeWI4RWVrX1Y2TXNjcHZSWlZaYlNQd3R1WDBKQWNyRnhwV9IBngFBVV95cUxQR01MSlo4SURVRWVXYzJPcUFseXVXVFEwTTZVNm84TGJ0Tmlid1ZJTUVidUdLVXRHSHA2ZjJpblBZS0Fuc21LME1rRU1qaXhTQXY0SEJyQmxTWE5jWjZua2hHVExGVkJWZ3VKSEdYek8yTmFQcEpPb0h5Z0I1MWhhYmpMZzI2aVJZT0VmakNLU3Z3cjVSVVhGZFJpSGhFUQ?oc=5",
-      "source": "Lenta News",
+      "title": "Сегодня во Владивостоке гололёд, сильный ветер и до -6 °C – Новости Владивостока на VL.ru - Новости Владивостока на VL.ru",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zM0JIUG8tRzFOb3A5SUdWZ3VKU3dCVjNieFdhLU1TdmV6Qm5oZTVjTllVWmhKazZFSGFLaF93SHZ2eTJGWlVCU19kSmU5Uy1uUHQwLXIwYnU?oc=5",
+      "source": "Новости Владивостока на VL.ru",
       "category": "Россия"
     },
     {
       "title": "ADNOC сообщила о 11 раненых при атаке на танкер в Ормузском проливе - ГИПОРТ",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVWptcUwxMWE1Q2g5WmtLdlc2dlRwRXpsUzlfY0ZiTHVtdnJ2TkFscGR3RkZENDY3ZjFYZ1ZNMFBZSnNtaXR5NUNjMS16cGVaUGlwWHlXN2daeWo3VGRtcEhwcXUxUzNxSFVRNUc0MkkwRDFYSlQ3dGozekkzXzJmVFB2MU5oOWQzckdaZEpleS1fbU1qbDFIWGpsLUdYNkxOTjRjZGY1OTV3dw?oc=5",
       "source": "ГИПОРТ",
-      "category": "Мир"
-    },
-    {
-      "title": "Минобороны России сделало заявление о военной операции в Черном море - Lenta News",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdzVRUU5jSXNTSTRVcEFuWllPeGhYTWZFbTVnWlF4RTctU001Q01yYU53UkxsN3hmY3VUQkNmbUtjcEtTd194OVlNc0t5TUhBOXBmMVdiTTRvZVd5VmVQV3NLU0hTZWdybHhwT244bVdMcllJUTZhVk53MFQyZ3NUdF9veWdKTm9kTXM5WGIwRTFEQ0FrNDdXUGFOYWN1N1VfbG5pWmxYOGVldEXSAbABQVVfeXFMTjM4Ym43Z1ZOU1FWR3U0QmQxMWtpUzJTU3JtNFVPTlBaZkdGZ1pKeE05U2ZxOGU4dXlCQjZyeDlGenpubm9KRUhFQkMyaHhPQmk0Q21WWG1IN2FySVkzX2tYV2JNUGg1TElvYzZkZ3RuV3pzb3BBUThrQXRjNUJUTXVpTUl5STd2YzlUWHZZdGhJQ3FTNlN2ZXpKXzNWR2NQWnN6TXZvYkhNOTBtRVpNTng?oc=5",
-      "source": "Lenta News",
-      "category": "Россия"
-    },
-    {
-      "title": "США закрывают Китаю удаленный доступ к передовым технологиям - EADaily",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ2RzaTNaOHdxdjVtNGFyRjdLRlhwNjZ6N2puelNiS24xbDA5TVpxY0JQTmZlYjRWcHhELU5ZclpMZ1V1VC1EMXcwZElBT2FGSGRwVXVhUTJpejFYcGFvU1pUSjZzcjVvTDJ3MGxZTmxSVzdqNjhaRUVyVHVnOHJWRnpnZWZWYk9Fa0VHX3kxNHA3QzYtaHFkbXJEWk1GOWFOLXI4UjhR0gGqAUFVX3lxTE9EZE1wZ2hEa2hkaDlRVUtDWmVpTVFYaVpRdTByWHE1UDZiSWlzbnhSQWlsTmI5VUdzZjFJdDJlT0cxMUQtbG5VaFFzV0dwemxQeVE4bDMwMVFMMUFYTkJWWW54R3RSODFfVkt5OVFtQmF3anB5UnQwcXllWEE3VjNVeFRoUTBMMzlwSGhOaEt6MlIzZ3o2Q1pLMVVTVnM0RmE4VFNlQ1VtSnFn?oc=5",
-      "source": "EADaily",
       "category": "Мир"
     }
   ]
