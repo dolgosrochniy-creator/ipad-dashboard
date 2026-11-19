@@ -1,22 +1,34 @@
 {
-  "updated": "2026-11-19T03:49:39.836485+00:00",
+  "updated": "2026-11-19T04:55:26.614430+00:00",
   "items": [
     {
-      "title": "Владимир Путин впервые после Анкориджа встретился с Дональдом Трампом - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLWo0VjhaLXl5MV9KNTM5TnhrcVZUTGs1ZlgtZ2I5RFp0Z1NCa1BHMDNyUTdXUXZWcWJlckNVVXdkNklyZ2JtTzdqZFNNX3pjOEhUV0pNNzZmaEFSSlA0NngycTJOejhrWWJDQjFsVkdjNkFJNHZITHJfWWF2MDg1Y3ozbk9PRFFsZzQxYnpmWndPVkk?oc=5",
+      "title": "Что Путин заявил на саммите АТЭС в Шэньчжэне - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORFRNRUFkYnFybzZBX0dCVE8xdXFHMEZrNV9IcnhNZ3phb0liWFdRU0pjYXd2dC05NWxkaGE5RFVCQ0xlLWZMLXE0T3RrZnZJem9XWnJ0bVF5Tm8zdGJLbkJOWXhBOHNzdnUyZEhLS3VWQjBzZ0RyNUV4dEJleFZpQ0dBcmo4ekE?oc=5",
       "source": "Ведомости",
       "category": "Россия"
     },
     {
-      "title": "Первый темнокожий спикер США: чем известен Хаким Джеффрис - RTVI",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOLS1rRUFfakpZZjZBbXNpZnp1UVJwejhURzYzN0VjVnluRy1OSFNLNE0zUVpZbUk5aDNuVWt2cmw5cEdMVnVfRnZpNFlibkdfSlM5YjNOSUJkWHNEWmcza3VRZ2ZRbnN6aDIzMTdfcVVvenllM0gzcTNLVUQyWDEwcUlBZmtaOElMSHRoaHpIenIxWEk?oc=5",
-      "source": "RTVI",
+      "title": "Демократы номинировали Джеффриса на пост нового спикера Палаты представителей - Интерфакс",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE91UWdVR2pfdFZxR3JVSXJvMkFTU1ZjQ2NSYklyVEFjdDdwMTF0cDFFeVBPUTFSOUQ2eDVNT216Z0M4R1U3ZFhRbmktbDJQZ9IBS0FVX3lxTFBHek11czVJWTUxbTRNd29FM3NVNTJxZWJsRDlkYVF6eWZMSjlLblF1Um5rSXNoWnREYlg3dHdpT1BrcjctQXBjMWJwaw?oc=5",
+      "source": "Интерфакс",
       "category": "Мир"
     },
     {
       "title": "Украина атаковала Крымский мост - URA.RU",
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1vS1pSSjBvbFdJV0tWb1lnSnhHNkxxOG96Q0JNdWJlallYUWJxMExpVm9sZTFyVGJ2ZlRiUmY0bXhuVVBITlJV?oc=5",
       "source": "URA.RU",
+      "category": "Россия"
+    },
+    {
+      "title": "Трамп решил обойтись без России в одном важном вопросе - URA.RU",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5EOHl1Smd0ZEtjZkFrRFFfZkNfeDF5dEFIcjJmZVlMaWExdUxMd3cyejZVbkdYUEdzMjNDYk1GYlRxYVVnOW9F?oc=5",
+      "source": "URA.RU",
+      "category": "Мир"
+    },
+    {
+      "title": "В Кремле заявили, что Путин и Трамп несколько раз пообщаются \"на полях\" саммита АТЭС - Интерфакс",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5CU05aNWdJOW5XblY4TGkyek1lcUowTVdyRXVRMG81MGJZa2ViRkw0ektucE9GSzVIZ1dsRzlQMjJzQzZzdGhobGRzUDhtdTjSAUtBVV95cUxQaWdWVk9rTXZadU85VjR1Q3IxLUlOQ3lYTEM2RFVPa2otWUJQZFFjOWFrU0FxY1JlREU3cHI5UWR6VVFvTC1sTUpUXzQ?oc=5",
+      "source": "Интерфакс",
       "category": "Россия"
     },
     {
@@ -32,21 +44,9 @@
       "category": "Россия"
     },
     {
-      "title": "Nvidia полностью прекратила поставки ИИ-чипов в Китай — даже разрешённых США Hopper - 3DNews",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTGJ6eDJETE95cTNjNVdEX3I2eFp6cjV5X3R2MlJrWldpdXVwaVZZQUVaSmlPa3lFblZ6a09qbXYtZUJXQ2V2c1BKRFJvRy1NTGpSdHRZRjNJeF95cmFrMjU4YlhZLTROZi1qMWFVakFTb0xYTlQ3MV9OMmxuMXdoZHRyVmtYODdEdGg0Tk1fOGxBSnBodXd4bUxvbHc2Q0J4NXVjMHRsdEkzWWxRVnE40gG0AUFVX3lxTE5RZUxRaVpXQkl6TkFUeFo2VkpvWTJ2TE1kS2lSdGlHeElSTExfMHlhY2FaM3ZpRk56YzBXSTUzZGNMd2I2eXFzdjVVRDBBRWF4Y1l1Mi1fZEZOMGg5TERlOWdnd1RkVTRfLXdDQUtyN0Y3LTJKLWxvLVFaTXhIZDZlV2ZwUExUN3VxUUtZV3BhWlp1WEFJNDlxSlVnTFEyVndPZzRLdG5IQWZsY2hlbUlBaTA2MQ?oc=5",
-      "source": "3DNews",
-      "category": "Мир"
-    },
-    {
-      "title": "Обстановка в атакованном ВСУ российском регионе изменилась - Lenta News",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQb1BLRGlERjYzSlFVT3hGVGw1YnA1cF84UUFxbUZfS2lfQnZjNVVZMjRFQ1FqOENpWE9kVFROa24yd0YwcWVJc25WdlhGNGk2R2FuOXd1d29hMTVUOWp1OFUweVJGN3FjYlAzUjdjUWhpcG8tMWpTeWI4RWVrX1Y2TXNjcHZSWlZaYlNQd3R1WDBKQWNyRnhwV9IBngFBVV95cUxQR01MSlo4SURVRWVXYzJPcUFseXVXVFEwTTZVNm84TGJ0Tmlid1ZJTUVidUdLVXRHSHA2ZjJpblBZS0Fuc21LME1rRU1qaXhTQXY0SEJyQmxTWE5jWjZua2hHVExGVkJWZ3VKSEdYek8yTmFQcEpPb0h5Z0I1MWhhYmpMZzI2aVJZT0VmakNLU3Z3cjVSVVhGZFJpSGhFUQ?oc=5",
-      "source": "Lenta News",
-      "category": "Россия"
-    },
-    {
-      "title": "Европейская комиссия предложила выделить новый кредит Украине на 45 млрд евро - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZlNDMmpNZGlOZHAzRE0zVGRJME1uV1lzTHdncVZvTkRjYTJQOUoyYlNLcGNEell0ZjBxSktQd014NV9Pb2hhT3dnUmhqUmJfeF9TV0pjRVFqLUcxX1VVaUFTNXJkV2pwbGQ4ZEdsSXY5akFQVS1YT21na3lhSnlHTmZpN2NBTkpBeXFXSGJXNWxNRkVp?oc=5",
-      "source": "Ведомости",
+      "title": "Выступление Путина на пленарном заседании АТЭС: фрагментация мировой экономики и открытость России - Финансы Mail",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOT0JhdmU2LVdNUFAtdVpOeHV4cGt6Y2txSkVNQkYwMkFyMEtNN1M4NFdxTVFBWGt5N04zeWZsbElFNmk3TktZY3FMOXd6TnAzbGNJUFBWRHY1MUFUX01QUjI2R2I4d3lxdEE0YkZMUWI0aHI0ZDBRSUZielIyU2hBZEI4V0F0Uy1BYnR4cmNCRUo3YTBYWklWWUFWb0RBM0J4VER6RkJIUFUwN2VwSjI2dlh0Qm1UWGVSOWtz?oc=5",
+      "source": "Финансы Mail",
       "category": "Мир"
     }
   ]
