@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T19:55:38.372195+00:00",
+  "updated": "2026-11-19T20:46:15.146891+00:00",
   "items": [
     {
       "title": "Главные заявления Путина по итогам саммита с Трампом и Си Цзиньпином - Ведомости",
@@ -14,20 +14,32 @@
       "category": "Мир"
     },
     {
-      "title": "ВСУ вновь атаковали Крымский мост — утренняя сводка - Столица С",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1aaTlKUTZSLTdTbExrV0d3R19MVzZIeUdoR2pjYTVpWC1Ba0xaRVhXeXBDZFM4dWFrQlNpeFJNWWVlMnA0XzhCYzFiRXM?oc=5",
-      "source": "Столица С",
+      "title": "Никитин: у России есть альтернативные варианты доставки людей и грузов в Крым - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9yTFpLby01YWlSdnZJTXRoSU9taXZmZXliXzJDLVF0VzVZU0NvSzJEX1VaTVBEbTRwOTQwWTVOdTlPNFo5M1liR3NpcTk3Y2ZPUkowNUNPTGV4T3BVSzcycDRZaTEwcl9ubzA1Wl9zOU85QVZ6Z1Y4bWdR?oc=5",
+      "source": "Ведомости",
       "category": "Россия"
     },
     {
-      "title": "Суд ООН признал Мьянму виновной в геноциде: это может повлиять на дело против Израиля - RTVI",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMDU1RU1nU3Y4azhtNTB6Si1HZDd3cS1tNFAwOWlCNm1TNEFkWER1b0RYYmdxWHBwNFZtaGxkNTZXZTdwVEN3d1h1dU9PQ0twZjBPWFBhMlVJdTB1X2xfRmY2ZHFtNkVBd1pIY25UVmdaYlFCN3ZmWVRIMEdnMnAxNWx5TTB5UkZiRTY3TWFVTTF4UU1VcHN4WFotYVRDVXN5bE9BNzRwdVNEam9BbmxlM0FyUy0?oc=5",
-      "source": "RTVI",
+      "title": "Санкции ЕС против России — когда они будут сняты, ответил Мерц - 19 ноября 2026 - ФОНТАНКА.ру",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8ycTI5SFpaRWY4ZWdCX0QzYnR0ME1ub1dCWE85Ti0wZWpGU0J3Wi1LbFBOVGxhTVh5SWkyY2lTUDJKRVhpUmlfeE5rNEdSMjBtZ201c0d1VQ?oc=5",
+      "source": "ФОНТАНКА.ру",
       "category": "Мир"
     },
     {
-      "title": "Путин: Россия согласилась вписать безопасность Украины в общеевропейскую - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQjBxWk1QMUc5TVFHZFo5WkNnRkZHVWd3UDZtWm5VazVicnN6Nk5KeWRwbWR0VGNZYmx6dkVra1ZjbmFNNHJaZHoxVVhXMUF5SnprVjZxVGpoQjJTRjZ0ZXJ0R1BpSnVDdnhsQXZkem9NeUtNcDFrNGVHeTBCcjhaQ2FB?oc=5",
+      "title": "Путин заявил о нежелании продолжать конфликт с Украиной - newizv.ru",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdTE4VGlIOE9WU0FJb2pVYmgtNXl6bko5M2ZqdWxZczZPczRXSkR6T3BkdGxHNFExSnJqelY2WDM1eHJJc1pGeDN4YnBoLW0tRG4zX0RPYjduOWk1NTRlQXA1c1J6dWJVZHRaSG1JVzJjLVh3REdFOVlUcHNJRkY5RkNtQW5ZSVNiUEUxRWR6YXM3RHZwWWtIby0zX1A1QTA?oc=5",
+      "source": "newizv.ru",
+      "category": "Россия"
+    },
+    {
+      "title": "Самый высокий небоскреб Эр-Рияда поврежден в результате удара хуситов - ФОНТАНКА.ру",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5PcHhxZjVmbDVfeEVQX2FNWFNxYVRUSkpRVHhSenpBOHFBMkl5enJOdmE5eUF1cG9obW15eVA2U1pvQW4xandsQWVtM1Z4SDhtWEgxbWtJRQ?oc=5",
+      "source": "ФОНТАНКА.ру",
+      "category": "Мир"
+    },
+    {
+      "title": "Что содержится в декларации по итогам саммита АТЭС - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZkJicnR5bnlvTWtaa1lMaDFraS1BeWNHM21iTHprV0VIbEltbkdyNTVjOFlZV19SLWtQR0VwcGNXaVI4YUpXZ2hmdHQ2NTkwazhKOFIxSkp6ZDBMSTRUaHl2Z3NMMndWaVZGLTRzRVRySGo2RTBud0VPMnlPWWJFRDN0a3E?oc=5",
       "source": "Ведомости",
       "category": "Россия"
     },
@@ -35,18 +47,6 @@
       "title": "CCTV: Трамп заявил Си Цзиньпину, что США не поддерживают независимость Тайваня - newizv.ru",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdGlMWnh3MDl2VzFqTWJMMWVwa1Iyb1dTS2g2MTVXQ1JyenI0SHh6N1E5TkN3bDJvbWxtSklKOUt5aklGTHhIUEZXal84aHdhSVBZNmFta3M2LW44RElIWnB2QUJ1enR4NkFYXzRDUXVVeUR6aTlTOUs2UEFvNmV2TU5JZVlJS0I3SWxFbC10VGJfVkgyVUpROGFkTVVHbWJyTy1MQnZWQlJLS2tRbW1qOERQZ0NUWU5XZjJTeGhyTQ?oc=5",
       "source": "newizv.ru",
-      "category": "Мир"
-    },
-    {
-      "title": "Госдума приняла проект федерального бюджета во втором чтении - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNT3JwUS1pWlptYXliX3ZZQmJEaXhBYmFFZndtYVhOX2VkcHprWS1NZzAxeUItNjEtaGs3bTY2V3dIRnhVS0pGV0ZUcUdYaklEckRpSlFpVDJ4N1NTYjJtMFRDaDR4NGlUWFpZcHl2QktMd1pTQ3RHb2NycFU2N0F1RDkydnJydw?oc=5",
-      "source": "Ведомости",
-      "category": "Россия"
-    },
-    {
-      "title": "Мерц признал необходимость диалога с Россией - Lenta News",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUUhWVHBFS0g3bU1YYXNRem1YazZMdzd6bVM0VE8tV3UxSkJZQ01ERUpBUjBuQktjdFVvcWI4LXhCYlRLNXYxZWpsSzEzNHpLOVhLbmp5VWtxdUgzQVIyUWZoNGZkOU0wNjdtTW93ZHg4Qk9RSzAycDRseGo2Z3RIUHRUNExBRnfSAYwBQVVfeXFMTmYyVVhxRmNuNDFNZHFSTE9PTmFDRDZKbDhMNDNGeW9tMk1pdDlfaGlQanJnUmotYXVacFc5a2Q5dmNNbjRSWUFXckJTeUVXaHQ3amx2TjVqX0JhZHkwMy13UklEaHZYQTRVQ0VTYTVvcUVPVkp1RmpJRkxBaUhYWXVxTjR6RXIxUUY5b0w?oc=5",
-      "source": "Lenta News",
       "category": "Мир"
     }
   ]
