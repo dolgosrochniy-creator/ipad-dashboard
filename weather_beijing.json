@@ -1,7 +1,7 @@
 {
   "latitude": 39.89455,
   "longitude": 116.35983,
-  "generationtime_ms": 0.274658203125,
+  "generationtime_ms": 0.4138946533203125,
   "utc_offset_seconds": 28800,
   "timezone": "Asia/Shanghai",
   "timezone_abbreviation": "GMT+8",
@@ -15,12 +15,12 @@
     "wind_speed_10m": "km/h"
   },
   "current": {
-    "time": "2026-11-22T19:00",
+    "time": "2026-11-22T20:00",
     "interval": 900,
-    "temperature_2m": 3.2,
-    "apparent_temperature": -0.5,
-    "weather_code": 2,
-    "wind_speed_10m": 5.3
+    "temperature_2m": 2.4,
+    "apparent_temperature": -1.6,
+    "weather_code": 1,
+    "wind_speed_10m": 6.2
   },
   "hourly_units": {
     "time": "iso8601",
@@ -590,7 +590,7 @@
       0,
       0,
       0,
-      2,
+      0,
       0
     ],
     "precipitation_sum": [
@@ -603,5 +603,5 @@
       0.0
     ]
   },
-  "updated_at": "2026-11-22T11:09:55.299237+00:00"
+  "updated_at": "2026-11-22T12:07:55.389380+00:00"
 }
