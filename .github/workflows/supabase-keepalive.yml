@@ -10,14 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
-      - name: Check Supabase Auth health
+      - name: Update Supabase heartbeat record
         env:
           SUPABASE_URL: https://huxnfwmxfrsvgxurgpkn.supabase.co
           SUPABASE_PUBLISHABLE_KEY: sb_publishable_iCh1OvLTSrTzp1xbj7jSUg_2-lSut_w
         run: |
           set -euo pipefail
-          code=$(curl --silent --show-error --location --output /dev/null --write-out '%{http_code}' --max-time 25 --retry 2 --retry-delay 5 \
+          response=$(mktemp)
+          code=$(curl --silent --show-error --location --output "$response" --write-out '%{http_code}' --max-time 25 --retry 2 --retry-delay 5 \
+            -X POST \
             -H "apikey: $SUPABASE_PUBLISHABLE_KEY" \
-            "$SUPABASE_URL/auth/v1/health")
-          echo "Supabase Auth health HTTP status: $code"
-          test "$code" = "200"
+            -H "Content-Type: application/json" \
+            -d '{}' \
+            "$SUPABASE_URL/rest/v1/rpc/frame_keepalive_ping")
+          echo "Supabase heartbeat HTTP status: $code"
+          if [ "$code" != "200" ]; then
+            cat "$response"
+            exit 1
+          fi
+          echo "Heartbeat database update succeeded."
