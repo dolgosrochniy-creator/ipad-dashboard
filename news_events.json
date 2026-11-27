@@ -1,10 +1,34 @@
 {
-  "updated": "2026-11-27T13:30:05.509881+00:00",
+  "updated": "2026-11-27T22:17:11.684394+00:00",
   "items": [
     {
-      "title": "Петербург отразил атаку вражеских БПЛА - Официальный сайт Администрации Санкт‑Петербурга",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA4MXIwNU5VaU9zMTNvLUowTzVrMHc0d3ZkMEJKWnlVSk9WUmJoUU92dGV4M3llWnZKeW5SWE1oY0hqaVFfQTBvRGNmcVdKM2J3SEtRbzRmbHo?oc=5",
-      "source": "Официальный сайт Администрации Санкт‑Петербурга",
+      "title": "Кабмин предложил пошлины до 35% на импорт морепродуктов из недружественных стран - Ведомости",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9BRTc0Tkt0VFRjX21nWFRWb092YWVzQXRNcE9CcFVYZThkbnlpODJhZmVEMUwzOS1CWklMcHVHcGFKODBxQlhYWk1tNF9EWmR5WlBteDloRXZiLS02ZDNRZGI3NXFIMFhrN0RCSGdnRTBrb0o1b1NET1pNMTdjdw?oc=5",
+      "source": "Ведомости",
+      "category": "Россия"
+    },
+    {
+      "title": "Победившие Вучича студенты выдвинули ученого-химика в президенты Сербии - RTVI",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPR2FibHo4UTZLa1RzZ2Q5b0NSNk1oQ08wcWEtWXZ1NUxFMlBnejBzQTJOblpKcWtNdzB5Q0hvTFZNdG5xR2c2NTlPekN4dE1QY1dIbFNxVVdvemJEeUVQc3JlejhqeDllMXJLbWVRWW13UFlIVkNWT0U2RjB1SlpkUFpUQWxiRzhZdXVyZWtuTmQ4YTczTTZjOXRZNA?oc=5",
+      "source": "RTVI",
+      "category": "Мир"
+    },
+    {
+      "title": "Семьдесят квартир многоквартирного дома повреждены в Новороссийске из-за БПЛА - Интерфакс",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1PUHpsX2VueEIzV0VTdnQ1RGF5d01SbDh5TFVOSjN3Z0ZXWkYyZzNJVmxFNGg5R3pUOXFtQm9WYmJXelVvWmlSWVdKbUNSNWPSAUtBVV95cUxQMHMteV9EN2c2ZUxCU1RnN053Ty05UWpGSmlmZG5GekZVcVVtcU90VUVIUTltazJmWnRwVjkzd043T1RlSnhxNFBoaXM?oc=5",
+      "source": "Интерфакс",
+      "category": "Россия"
+    },
+    {
+      "title": "Болгария согласилась участвовать в займе для Украины, но отказалась финансировать поставки оружия - RTVI",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNG1tZVdCNW5DdE15M19Kb3VsdkkxUnpkeFU3RlNiWDVCcFJSSERrZHRkQzJWMHpaUEZ6bTlwS1lON3M3ZEJnWlB1R2RBUzk0Y01OOVRDRndpbDNyRlNZcGs5eThtWnQtekljOWpWaVNlczdENFBEYkZETm95eElkWHhURFBWdFZrVnRfWmY3a2ljVy1DcWxrZWhET01SenJ6SkJRN256a0JQQmM2R2J5Q251Q3BHUzNoRXIzRUUtajFOQQ?oc=5",
+      "source": "RTVI",
+      "category": "Мир"
+    },
+    {
+      "title": "Пять человек пострадали в результате ДТП на Комсомольском проспекте в Москве - Интерфакс",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA3ZFFjS2JScUM4WHU5bUtxaGNUWmdZSmdiaG9LVzdTcVdsZUQ5STlTWFVQWnJYeHRERnc4NTJCY2NvSkhzS0F1RGFmMk1PeE3SAUtBVV95cUxPSF92OVRQWHZPaTI1TUh5Rm9kNXVsYzFCcXBUQ01zZ3owODdDTjNJeGxMdTl1MFNHdWhmS1hFeXhZTlZMdVdiQlN1Nk0?oc=5",
+      "source": "Интерфакс",
       "category": "Россия"
     },
     {
@@ -14,39 +38,15 @@
       "category": "Мир"
     },
     {
-      "title": "Беда с НПЗ: власти России снова запретили экспорт топлива для реактивных двигателей - EADaily",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQU0xLbDZqSlRaVlVJYTJxY1Jpak51OFI5ZmNFd3Q5bFFxWmlBcnA1VE8xSS1xR193Yk1ORWR2MGNpbEczd0s1TEJaUFdEVTZGUHVXSzZPMWVTNDFPVG5DQ3lkRjlyUG9SbHlaZ2xmeE0yVmdPUnFYeDdMMWNQX3oyeWZkbFU3amctVVowNHR3WmdwZGFIRFREc0g4T0w3RXlSVkFNWDYxZGRneHo2QUkwNTlpdkN1WnlQc3RINnlnWdIBwwFBVV95cUxNaXVtLUg5Y2h0dlZiVnA1QnQtRld6WkNNRVZDT01aa0tHanBqMlFoM3lmNDVxQmVFeHpUQnh5Q0lOVzhtZE9MZ3RTZVQxTlh4eVVJLThqcUtHS3FWeXBaUmIwWEVqNmQ1Y3NiWFpqNXBmSl9oTFhDRXlrbDZnX0x1M1Zmc2hOcnVEVEtFOXd5YnBrbnM1ejlGWDVYbUFzM1NSUWhBQjJXWEdZZFQwbDYtZ1hOam5CV3FMTmE2UmwzT3ZRWVU?oc=5",
-      "source": "EADaily",
+      "title": "В России построили первую атомную подлодку с гиперзвуковыми ракетами «Циркон» - RTVI",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTW1BaFVlTXNjMy1jQlpqOUJFVVJPREpvUUVNYTRDR3NnaEE0Yl9MR2M5aHRsaHdObTVYQkNJVlduV0FsWlY5cW9OaERLX2lpd3lSMlFfSTlUVXM5aWp6NFFWUWdlM0VYWU9hWU5CQ3BPTFdBa1FyUTlVOC0xRE5FekNZeE9lN01QVFFiOENsZ1VnOHdjcFU3QWI4THRtOEVPMjg3clRnMWY?oc=5",
+      "source": "RTVI",
       "category": "Россия"
     },
     {
       "title": "Что происходит с нефтью 27 ноября 2026 года: как торгуется нефть марок Brent и WTI в этот день - Финансы Mail",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMmFCSUxlblIxSVlPZl84WnZXNzVKT2lMU2VodVRHMy1HR3B4N2lXRFREUm9fYnAwUmJUS3AxZFpWWVQzY1VMXzY1RG0zNWFYZkF0bWFzcGZfYUsyUHNzeEMzSm1jdFFKdHVEZ1NyaHFiSFVyN1Jqd2RGV3NKVmZrN0JIMkJGSWMxV3BzX3BpV19heUl2?oc=5",
       "source": "Финансы Mail",
-      "category": "Мир"
-    },
-    {
-      "title": "Россия на полгода ограничит экспорт гречихи - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwVTkyTXdvT0Voek9PSDlzRDNfRU5kc0dnVEdVVXZPU2NhMWZiZk9LZGQ3VmNRTE5tcnR2UUpLLS1fVDNleVBucW9RUGdCREpmMUFXV2lOYV9yU1I2d2NFWTYzaDNpT2xmWjFkOGt0eUk1bkpmcnlFN0pVWHV1UVE?oc=5",
-      "source": "Ведомости",
-      "category": "Россия"
-    },
-    {
-      "title": "Лидеры ЕС обсуждают новый кредит Украине на 45 млрд евро - DW.com",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeFM1MmI4VUh2Q2VlMEh2S3JETjNUeVlBanJCeV9XNnpLVXFjMkJPUTFTMmU3Njl1TFZkN0Y1enh6T0hIc0NhYjZaQzB3OVhpOGlYSVBic2czeGpmN0dwcVpOZ2I4OGZiN1FSaFlidVdYY1JjOERzRUltLUFJMVBiajlFOEVRdXI1Q094YUIzV0RsV2fSAZMBQVVfeXFMTVE4WjFGVTZPZmozVnFfQ3dQdmhwSWJBRUFjZTE3UGV4WnRGbWlRanVJVFpyRDBCUkkyOGs1c3otUUVaekJnRjJIMzdaQnJfVUVKN3JqeEU5TjJtaXlCclluUXppdnZYVU9VaFdDZDNFc1YyaGVfTl94SC0td2dEa1owaXV4R2l4Yno4TnlkU0FvWWV3?oc=5",
-      "source": "DW.com",
-      "category": "Мир"
-    },
-    {
-      "title": "Семь стран ЕС в знак протеста покинули переговоры о бюджете - Ведомости",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdkJyTlc5WDlmTFRTRWRjSjlNWV9qa090NzM3UkpWT0VneGU3YTd2UFVXOGw1N0RTRTFwQmVwVzh5Y3pvb3BIS09LdE4yM3ZycDJxU0gzaDVvYmVXSURSRWd1S1JZRldvU3l6WVZYaTNaRWgtZDY2OEVVMXFpTzlLeVhISS1BbEhHaHc?oc=5",
-      "source": "Ведомости",
-      "category": "Россия"
-    },
-    {
-      "title": "«Этого нельзя допустить»: Берлин обвинил Россию в эскалации на Черном море - RTVI",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1FekcyYjN5ODhNM3ZZM2NMWG5WczlGSjZEZWVrY0hNaFNmSDIwV1BUclhja0diUG1iNTV2b1V0SlMyTG45MG9SRjV1b1c2VzBKOHYtWmpCaThPNVlYV0h1R2swaXR1dVJKSDZQZ09R?oc=5",
-      "source": "RTVI",
       "category": "Мир"
     }
   ]
